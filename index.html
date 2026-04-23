@@ -6,7 +6,7 @@ custom_css: sidebar
 <div class="container">
     <div class="row">
         <!-- Left Sidebar -->
-        <div class="col col-3 col-t-12 sidebar">
+        <div class="col col-12 col-t-3 sidebar">
             <div class="sidebar-content">
                 <div class="sidebar-section">
                     <h3 class="sidebar-title">Projects</h3>
@@ -29,7 +29,7 @@ custom_css: sidebar
         </div>
 
         <!-- Main Content -->
-        <div class="col col-9 col-t-12">
+        <div class="col col-12 col-t-9">
             <div class="row">
                 {% for post in paginator.posts %}
                     {% include post-card.html %}
