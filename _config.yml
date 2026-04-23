@@ -1,0 +1,60 @@
+# Remote theme directory
+remote_theme: analytics-link/analytics-link.github.io
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+#-------------------------------
+# General Site Settings
+title: Yachika Anand
+description: "Hi I'm Yachika Anand, and I'm a Data Solutions Architect. I build production-ready data and AI systems with a focus on reproducibility, scalability, and system design. My work includes orchestrating ML pipelines with DVC, developing predictive models for real-world business problems, and engineering large-scale AI applications using RAG, LangGraph, and semantic caching. I approach machine learning as a system—not just a model—emphasizing versioning, data lineage, experimentation, and efficient deployment. My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume) by using the links below!"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+#-------------------------------
+# About Section
+subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
+location: "Cambridge, Canada"
+resume_url: docs\Yachika_Anand_Resume_April2026.pdf
+avatar_image: img\profile_pic.png
+
+#-------------------------------
+# Contact links
+linkedln: "https://www.linkedin.com/in/yachikanand/" # Add your linkedln handle
+github: "https://github.com/yachika-yashu"  # Add your github handle
+
+paginate: 6
+paginate_path: "/page/:num"
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+      read_time: true
+      share: false
+
+
+#-------------------------------
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+
+
+
+
+
+
