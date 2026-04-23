@@ -4,6 +4,7 @@
   technologies: ["Python", "K-Means", "Pandas"]
   date: "2025-10"
   link: "/posts/customer-segmentation"
+  github_link: ""
 
 - title: "Predictive Analytics Pipeline"
   category: "ML"
@@ -11,18 +12,23 @@
   technologies: ["Python", "DVC", "Scikit-learn"]
   date: "2025-10"
   link: "/posts/predicting-customer-loyalty"
+  github_link: ""
 
 - title: "Real-time Data Processing"
   category: "Data Engineering"
   description: "Engineered Apache Spark pipeline for processing streaming data at scale with automatic fault tolerance."
   technologies: ["Spark", "Python", "AWS"]
   date: "2025-10"
+  link: ""
+  github_link: ""
 
 - title: "LLM-Based RAG System"
   category: "AI"
   description: "Developed Retrieval-Augmented Generation system using LangGraph for intelligent document Q&A."
   technologies: ["Python", "LangGraph", "LLMs", "Semantic Caching"]
   date: "2025-10"
+  link: ""
+  github_link: ""
 
 - title: "Causal Impact Analysis"
   category: "Data Science"
@@ -30,3 +36,4 @@
   technologies: ["Python", "Causal Impact", "Statistics"]
   date: "2025-10"
   link: "/posts/causal-impact"
+  github_link: ""

@@ -1,10 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF9F0 !important;
+}
+
 /* Sidebar Styling */
 .sidebar {
     position: relative;
 }
 
 .sidebar-content {
-    background: #f8f9fa;
+    background: #FFFDF8;
     border-radius: 8px;
     padding: 20px;
     position: sticky;
@@ -65,7 +73,7 @@
 }
 
 .project-card {
-    background: #f8f9fa;
+    background: #FFFDF8;
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid #f58506;
@@ -139,7 +147,7 @@
 
 /* Experience Page Styling */
 .experience-item {
-    background: #f8f9fa;
+    background: #FFFDF8;
     padding: 20px;
     margin: 20px 0;
     border-left: 4px solid #f58506;
@@ -220,7 +228,7 @@
 }
 
 .skill-category {
-    background: #f8f9fa;
+    background: #FFFDF8;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
@@ -284,7 +292,7 @@
 
 /* Certification Styling */
 .certification-item {
-    background: #f8f9fa;
+    background: #FFFDF8;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
@@ -348,4 +356,39 @@
     .project-category {
         margin-top: 8px;
     }
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.btn-primary {
+    background-color: #f58506;
+    color: #fff !important;
+    border: 1px solid #f58506;
+}
+
+.btn-primary:hover {
+    background-color: #d17005;
+    color: #fff !important;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #f58506 !important;
+    border: 1px solid #f58506;
+}
+
+.btn-secondary:hover {
+    background-color: #f58506;
+    color: #fff !important;
 }

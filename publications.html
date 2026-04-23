@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Skills
-permalink: /skills/
+title: Publications
+permalink: /publications/
 custom_css: sidebar
 ---
 <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
@@ -23,7 +23,7 @@ custom_css: sidebar
                     <h3 class="sidebar-title">Experience</h3>
                     <ul class="sidebar-list">
                         <li><a href="/experience/">Work History</a></li>
-                        <li><a href="/skills/" class="active">Skills & Expertise</a></li>
+                        <li><a href="/skills/">Skills & Expertise</a></li>
                         <li><a href="/certifications/">Certifications</a></li>
                     </ul>
                 </div>
@@ -31,7 +31,7 @@ custom_css: sidebar
                     <h3 class="sidebar-title">Publications & Writing</h3>
                     <ul class="sidebar-list">
                         <li><a href="/">Blog Posts</a></li>
-                        <li><a href="/publications/">Publications</a></li>
+                        <li><a href="/publications/" class="active">Publications</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,41 +39,24 @@ custom_css: sidebar
 
         <!-- Main Content -->
         <div class="col col-12 col-t-9">
-            <h1>Skills & Expertise</h1>
-            
-            <section class="skills-section">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    {% for category in site.data.skills.technical_skills %}
-                        <div class="skill-category">
-                            <h3>{{ category.name }}</h3>
-                            <ul>
-                                {% for skill in category.items %}
-                                    <li>{{ skill }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    {% endfor %}
-                </div>
-            </section>
+            <h1>Publications</h1>
+            <p>A collection of my academic and technical publications.</p>
 
-            <section class="skills-section">
-                <h2>Tools & Platforms</h2>
-                <div class="tools-list">
-                    {% for tool in site.data.skills.tools_and_platforms %}
-                        <span class="tool-tag">{{ tool }}</span>
-                    {% endfor %}
+            {% for pub in site.data.publications %}
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>{{ pub.title }}</h3>
+                        <span class="duration">{{ pub.date }}</span>
+                    </div>
+                    <p class="company">{{ pub.publisher }}</p>
+                    <p>{{ pub.description }}</p>
+                    {% if pub.link %}
+                    <div class="project-actions">
+                        <a href="{{ pub.link }}" class="btn btn-primary" target="_blank">Read Publication</a>
+                    </div>
+                    {% endif %}
                 </div>
-            </section>
-
-            <section class="skills-section">
-                <h2>Domains of Expertise</h2>
-                <div class="domains-list">
-                    {% for domain in site.data.skills.domains %}
-                        <span class="domain-tag">{{ domain }}</span>
-                    {% endfor %}
-                </div>
-            </section>
+            {% endfor %}
         </div>
     </div>
 </div>

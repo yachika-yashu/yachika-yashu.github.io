@@ -1,0 +1,11 @@
+- title: "Example Publication Title"
+  publisher: "Journal of Machine Learning"
+  date: "2025-05"
+  description: "An in-depth study of robust AI architectures and semantic caching mechanisms for RAG pipelines."
+  link: "https://example.com/publication"
+
+- title: "Another Publication"
+  publisher: "Data Science Conference 2024"
+  date: "2024-11"
+  description: "A framework for reproducible model training and version control using DVC."
+  link: "https://example.com/publication2"
