@@ -65,7 +65,7 @@ custom_css: sidebar
                 </div>
             </section>
 
-            {% assign other_projects = site.data.projects | where_exp: "p", "p.category != 'ML' and p.category != 'Data Engineering' and p.category != 'AI'" %}
+            {% assign other_projects = site.data.projects | where_exp: "p", "p.category != 'ML'" | where_exp: "p", "p.category != 'Data Engineering'" | where_exp: "p", "p.category != 'AI'" %}
             {% if other_projects.size > 0 %}
                 <section id="other-projects">
                     <h2>Other Projects</h2>
