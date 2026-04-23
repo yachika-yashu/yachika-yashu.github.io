@@ -1,9 +1,53 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
     background-color: #FFF9F0 !important;
+    overflow-x: visible !important;
+    color: #333 !important;
+}
+
+/* Override Theme Defaults for Orange Cream */
+.header, .footer, .article-first, .article-head, .article-box {
+    background-color: #FFF9F0 !important;
+    color: #333 !important;
+}
+
+.header-title, .header-subtitle, .header-tagline, .header-box, .menu-links .item .item-link {
+    color: #333 !important;
+}
+
+.header-subtitle {
+    border-bottom: 2px solid #f58506 !important;
+}
+
+.footer-top .logo-text, .footer-bottom .copyright p, .footer-bottom .copyright p a, .footer-bottom .footer-social ul li a {
+    color: #555 !important;
+}
+
+.footer-bottom .copyright p a:hover, .footer-bottom .footer-social ul li a:hover, .menu-links .item .item-link:hover {
+    color: #f58506 !important;
+}
+
+.article-first .article-content-first .article-title a,
+.article .article-content .article-title a {
+    color: #333 !important;
+}
+
+.article-first .article-content-first .article-title a:hover,
+.article .article-content .article-title a:hover {
+    color: #f58506 !important;
+}
+
+.article-first .article-content-first .article-excerpt,
+.article .article-content .article-excerpt {
+    color: #555 !important;
+}
+
+.article-first .article-content-first .article-date .date,
+.article .article-content .article-info .article-date {
+    color: #999 !important;
 }
 
 /* Sidebar Styling */
