@@ -1,7 +1,6 @@
 # Remote theme directory
-#remote_theme: analytics-link/analytics-link.github.io
-remote_theme: mmistakes/minimal-mistakes
-#remote_theme: just-the-docs/just-the-docs
+remote_theme: analytics-link/analytics-link.github.io
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap

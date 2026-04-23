@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Experience
+permalink: /experience/
 ---
 <div class="container">
     <div class="row">
@@ -18,7 +20,7 @@ layout: default
                 <div class="sidebar-section">
                     <h3 class="sidebar-title">Experience</h3>
                     <ul class="sidebar-list">
-                        <li><a href="/experience/">Work History</a></li>
+                        <li><a href="/experience/" class="active">Work History</a></li>
                         <li><a href="/skills/">Skills & Expertise</a></li>
                         <li><a href="/certifications/">Certifications</a></li>
                     </ul>
@@ -28,12 +30,26 @@ layout: default
 
         <!-- Main Content -->
         <div class="col col-9 col-t-12">
-            <div class="row">
-                {% for post in paginator.posts %}
-                    {% include post-card.html %}
-                {% endfor %}
-            </div>
-            {% include pagination.html %}
+            <h1>Work Experience</h1>
+            <p>My professional journey in data science and AI systems engineering.</p>
+
+            {% for job in site.data.experience %}
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>{{ job.title }}</h3>
+                        <span class="duration">{{ job.duration }}</span>
+                    </div>
+                    <p class="company">{{ job.company }}</p>
+                    <p>{{ job.description }}</p>
+                    {% if job.highlights %}
+                        <ul class="highlights">
+                            {% for highlight in job.highlights %}
+                                <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>

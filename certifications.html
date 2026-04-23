@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Certifications
+permalink: /certifications/
 ---
 <div class="container">
     <div class="row">
@@ -20,7 +22,7 @@ layout: default
                     <ul class="sidebar-list">
                         <li><a href="/experience/">Work History</a></li>
                         <li><a href="/skills/">Skills & Expertise</a></li>
-                        <li><a href="/certifications/">Certifications</a></li>
+                        <li><a href="/certifications/" class="active">Certifications</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,12 +30,16 @@ layout: default
 
         <!-- Main Content -->
         <div class="col col-9 col-t-12">
-            <div class="row">
-                {% for post in paginator.posts %}
-                    {% include post-card.html %}
-                {% endfor %}
-            </div>
-            {% include pagination.html %}
+            <h1>Certifications & Education</h1>
+            
+            {% for cert in site.data.certifications %}
+                <div class="certification-item">
+                    <h3>{{ cert.title }}</h3>
+                    <p class="issuer">{{ cert.issuer }}</p>
+                    <p class="date">{{ cert.date }}</p>
+                    <p>{{ cert.description }}</p>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>

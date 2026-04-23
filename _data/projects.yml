@@ -1,0 +1,32 @@
+- title: "Customer Segmentation Analysis"
+  category: "ML"
+  description: "Segmented customer base using clustering algorithms to identify high-value customers and improve targeting strategies."
+  technologies: ["Python", "K-Means", "Pandas"]
+  date: "2025-10"
+  link: "/posts/customer-segmentation"
+
+- title: "Predictive Analytics Pipeline"
+  category: "ML"
+  description: "Built ML pipeline using DVC for reproducible model training and version control of datasets and models."
+  technologies: ["Python", "DVC", "Scikit-learn"]
+  date: "2025-10"
+  link: "/posts/predicting-customer-loyalty"
+
+- title: "Real-time Data Processing"
+  category: "Data Engineering"
+  description: "Engineered Apache Spark pipeline for processing streaming data at scale with automatic fault tolerance."
+  technologies: ["Spark", "Python", "AWS"]
+  date: "2025-10"
+
+- title: "LLM-Based RAG System"
+  category: "AI"
+  description: "Developed Retrieval-Augmented Generation system using LangGraph for intelligent document Q&A."
+  technologies: ["Python", "LangGraph", "LLMs", "Semantic Caching"]
+  date: "2025-10"
+
+- title: "Causal Impact Analysis"
+  category: "Data Science"
+  description: "Analyzed causal effects of business interventions using Bayesian time series modeling."
+  technologies: ["Python", "Causal Impact", "Statistics"]
+  date: "2025-10"
+  link: "/posts/causal-impact"

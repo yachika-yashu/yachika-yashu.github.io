@@ -1,0 +1,25 @@
+- title: "Data Solutions Architect"
+  company: "Current Company"
+  duration: "2023 - Present"
+  description: "Building production-ready data and AI systems with focus on reproducibility, scalability, and system design. Orchestrating ML pipelines with DVC, developing predictive models for real-world business problems, and engineering large-scale AI applications."
+  highlights:
+    - "Designed and implemented ML infrastructure using DVC and MLflow"
+    - "Developed RAG systems with semantic caching for improved performance"
+    - "Mentored junior data scientists on best practices"
+
+- title: "Senior Data Scientist"
+  company: "Previous Company"
+  duration: "2021 - 2023"
+  description: "Led machine learning initiatives and statistical analysis projects."
+  highlights:
+    - "Built predictive models for customer churn prediction"
+    - "Implemented A/B testing framework for experimentation"
+    - "Optimized data pipelines reducing processing time by 40%"
+
+- title: "Data Analyst"
+  company: "Earlier Company"
+  duration: "2020 - 2021"
+  description: "Analyzed business data and created insights for stakeholders."
+  highlights:
+    - "Developed dashboards for executive reporting"
+    - "Created SQL queries for complex data analysis"

@@ -1,0 +1,23 @@
+<div class="project-card">
+    <div class="project-header">
+        <h3>
+            {% if include.project.link %}
+                <a href="{{ include.project.link }}">{{ include.project.title }}</a>
+            {% else %}
+                {{ include.project.title }}
+            {% endif %}
+        </h3>
+        <span class="project-category">{{ include.project.category }}</span>
+    </div>
+    <p class="project-description">{{ include.project.description }}</p>
+    {% if include.project.technologies %}
+        <div class="project-tech">
+            {% for tech in include.project.technologies %}
+                <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% if include.project.date %}
+        <p class="project-date">{{ include.project.date }}</p>
+    {% endif %}
+</div>

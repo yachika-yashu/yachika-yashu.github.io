@@ -1,0 +1,79 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<div class="container">
+    <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col col-3 col-t-12 sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Projects</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="/projects/" class="active">All Projects</a></li>
+                        <li><a href="/projects/#ml-projects">Machine Learning</a></li>
+                        <li><a href="/projects/#data-projects">Data Engineering</a></li>
+                        <li><a href="/projects/#ai-projects">AI Applications</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Experience</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="/experience/">Work History</a></li>
+                        <li><a href="/skills/">Skills & Expertise</a></li>
+                        <li><a href="/certifications/">Certifications</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col col-9 col-t-12">
+            <h1>My Projects</h1>
+            <p>Explore my portfolio of data science and AI projects showcasing production-ready systems, reproducible ML pipelines, and scalable data solutions.</p>
+
+            {% assign ml_projects = site.data.projects | where: "category", "ML" %}
+            <section id="ml-projects">
+                <h2>Machine Learning</h2>
+                <div class="projects-list">
+                    {% for project in ml_projects %}
+                        {% include project-card.html project=project %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            {% assign data_projects = site.data.projects | where: "category", "Data Engineering" %}
+            <section id="data-projects">
+                <h2>Data Engineering</h2>
+                <div class="projects-list">
+                    {% for project in data_projects %}
+                        {% include project-card.html project=project %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            {% assign ai_projects = site.data.projects | where: "category", "AI" %}
+            <section id="ai-projects">
+                <h2>AI Applications</h2>
+                <div class="projects-list">
+                    {% for project in ai_projects %}
+                        {% include project-card.html project=project %}
+                    {% endfor %}
+                </div>
+            </section>
+
+            {% assign other_projects = site.data.projects | where_exp: "p", "p.category != 'ML' and p.category != 'Data Engineering' and p.category != 'AI'" %}
+            {% if other_projects.size > 0 %}
+                <section id="other-projects">
+                    <h2>Other Projects</h2>
+                    <div class="projects-list">
+                        {% for project in other_projects %}
+                            {% include project-card.html project=project %}
+                        {% endfor %}
+                    </div>
+                </section>
+            {% endif %}
+        </div>
+    </div>
+</div>

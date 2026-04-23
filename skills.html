@@ -1,0 +1,70 @@
+---
+layout: default
+title: Skills
+permalink: /skills/
+---
+<div class="container">
+    <div class="row">
+        <!-- Left Sidebar -->
+        <div class="col col-3 col-t-12 sidebar">
+            <div class="sidebar-content">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Projects</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="/projects/">All Projects</a></li>
+                        <li><a href="/projects/#ml-projects">Machine Learning</a></li>
+                        <li><a href="/projects/#data-projects">Data Engineering</a></li>
+                        <li><a href="/projects/#ai-projects">AI Applications</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Experience</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="/experience/">Work History</a></li>
+                        <li><a href="/skills/" class="active">Skills & Expertise</a></li>
+                        <li><a href="/certifications/">Certifications</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col col-9 col-t-12">
+            <h1>Skills & Expertise</h1>
+            
+            <section class="skills-section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    {% for category in site.data.skills.technical_skills %}
+                        <div class="skill-category">
+                            <h3>{{ category.name }}</h3>
+                            <ul>
+                                {% for skill in category.items %}
+                                    <li>{{ skill }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <h2>Tools & Platforms</h2>
+                <div class="tools-list">
+                    {% for tool in site.data.skills.tools_and_platforms %}
+                        <span class="tool-tag">{{ tool }}</span>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <h2>Domains of Expertise</h2>
+                <div class="domains-list">
+                    {% for domain in site.data.skills.domains %}
+                        <span class="domain-tag">{{ domain }}</span>
+                    {% endfor %}
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

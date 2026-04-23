@@ -1,0 +1,45 @@
+technical_skills:
+  - name: "Languages"
+    items:
+      - "Python"
+      - "SQL"
+      - "Scala"
+      - "Bash"
+
+  - name: "Machine Learning"
+    items:
+      - "Scikit-learn"
+      - "TensorFlow"
+      - "PyTorch"
+      - "XGBoost"
+
+  - name: "Data Engineering"
+    items:
+      - "Apache Spark"
+      - "DVC (Data Version Control)"
+      - "Airflow"
+      - "Docker"
+
+  - name: "AI & LLMs"
+    items:
+      - "LangGraph"
+      - "LangChain"
+      - "RAG Systems"
+      - "Semantic Search"
+
+tools_and_platforms:
+  - "Jupyter Notebooks"
+  - "Git & GitHub"
+  - "AWS (EC2, S3, Lambda)"
+  - "Docker & Kubernetes"
+  - "PostgreSQL"
+  - "MongoDB"
+  - "Apache Kafka"
+
+domains:
+  - "Machine Learning"
+  - "Statistical Analysis"
+  - "Data Engineering"
+  - "Causal Inference"
+  - "Time Series Analysis"
+  - "NLP & LLMs"
