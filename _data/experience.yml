@@ -3,8 +3,8 @@
   duration: "January 2026 - Present"
   highlights:
     - "Designed and implemented end-to-end data solutions, including automated yearly reporting dashboards in Power BI for business intelligence and performance analytics."
-- "Leading the creation of an AI/ML-powered RAG chatbot integrated into the website, leveraging natural language processing to identify resume gaps, recommend skill enhancements, and provide personalized career insights."
-- "Developed website data retrieval pipelines to enable real-time data access and integration across platforms."
+    - "Leading the creation of an AI/ML-powered RAG chatbot integrated into the website, leveraging natural language processing to identify resume gaps, recommend skill enhancements, and provide personalized career insights."
+    - "Developed website data retrieval pipelines to enable real-time data access and integration across platforms."
 
 - title: "Professor (Data analytics)"
   company: "Conestoga College "
@@ -46,10 +46,10 @@ visualization, enhancing their data interpretation skills."
   company: "Sai institute of skill development"
   duration: "2018 - 2019"
   highlights:
-    - "Provided training to 120+ trainees in various computer courses like Microsoft Office, HTML,CSS, WordPress, C, C++""
-    - "Prepared trainees for interviews and guided for job application"""
-    - "Maintained existing computer programs by making minor modifications"""
-    - "Supervised the JSD exams held at the Institution by the National Skill Development Corporation"""
-    - "Improved trainee's placement percentage to 100%"""
+    - "Provided training to 120+ trainees in various computer courses like Microsoft Office, HTML,CSS, WordPress, C, C++"
+    - "Prepared trainees for interviews and guided for job application"
+    - "Maintained existing computer programs by making minor modifications"
+    - "Supervised the JSD exams held at the Institution by the National Skill Development Corporation"
+    - "Improved trainee's placement percentage to 100%"
 
 
