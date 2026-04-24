@@ -1,25 +1,55 @@
 - title: "Data Solutions Architect"
-  company: "Current Company"
-  duration: "2023 - Present"
-  description: "Building production-ready data and AI systems with focus on reproducibility, scalability, and system design. Orchestrating ML pipelines with DVC, developing predictive models for real-world business problems, and engineering large-scale AI applications."
+  company: "No Worker Left Behind"
+  duration: "January 2026 - Present"
   highlights:
-    - "Designed and implemented ML infrastructure using DVC and MLflow"
-    - "Developed RAG systems with semantic caching for improved performance"
-    - "Mentored junior data scientists on best practices"
+    - "Designed and implemented end-to-end data solutions, including automated yearly reporting dashboards in Power BI for business intelligence and performance analytics."
+- "Leading the creation of an AI/ML-powered RAG chatbot integrated into the website, leveraging natural language processing to identify resume gaps, recommend skill enhancements, and provide personalized career insights."
+- "Developed website data retrieval pipelines to enable real-time data access and integration across platforms."
 
-- title: "Senior Data Scientist"
-  company: "Previous Company"
-  duration: "2021 - 2023"
-  description: "Led machine learning initiatives and statistical analysis projects."
+- title: "Professor (Data analytics)"
+  company: "Conestoga College "
+  duration: "2024 January - 2025 April"
   highlights:
-    - "Built predictive models for customer churn prediction"
-    - "Implemented A/B testing framework for experimentation"
-    - "Optimized data pipelines reducing processing time by 40%"
+    - "Trained 330+ students in Web content management systems, including WordPress and D3.js (Data-
+Driven Documents), focusing on data analytics and visualization techniques."
+    - "Delivered lectures, led discussions, and conducted assessments with an emphasis on applying data
+analysis and visualization to real-world projects."
+    - "Mentored students in implementing D3.js for creating interactive, data-driven charts and graphs for
+client-facing applications."
+    - "Employed innovative teaching methodologies to engage students in both the theoretical and practical
+aspects of data visualization."
+    - "Gained experience teaching students from diverse backgrounds using a Learning Management System (LMS), ensuring effective learning outcomes."
 
-- title: "Data Analyst"
-  company: "Earlier Company"
-  duration: "2020 - 2021"
-  description: "Analyzed business data and created insights for stakeholders."
+- title: "Analyst & Web Developer"
+  company: "IEC Hamilton"
+  duration: "2023 August - 2024 April"
+
   highlights:
-    - "Developed dashboards for executive reporting"
-    - "Created SQL queries for complex data analysis"
+    - "Analyzed user engagement metrics and content performance across company blogs, social media, and the website, leading to a 40% increase in user interaction."
+    - "Developed data-driven social media strategies by tracking key performance indicators (KPIs), resulting in a 50% growth in followers across platforms."
+    - "Conducted in-depth market research and audience segmentation using surveys, A/B testing, and data analytics tools to optimize content and marketing strategies."
+    - "Collaborated with marketing teams to integrate insights from data analysis into broader campaigns,enhancing overall performance."
+    - "Translated complex data insights into visually compelling reports and dashboards, supporting business decision-making and strategy development."
+
+- title: "Professor- Data Analytics"
+  company: "ANOVUS INSTITUTE OF CLINICAL RESEARCH"
+  duration: "2019 - 2022"
+  highlights:
+    - "Instructed clinical research students on leveraging Python, SAS for statistical analysis and Excel for data
+visualization, enhancing their data interpretation skills."
+    - "Help Collect, clean, analyze and visualize data to solve data driven problems"
+    - "Developed and delivered comprehensive lectures and hands-on workshops on data manipulation and statistical analysis"
+    - "Created and graded assignments, projects, and exams to assess student understanding and progress."
+    - "Provided mentorship and support to students, helping them to develop practical skills in data analytics. " 
+
+- title: "Data analytics Trainer JSD"
+  company: "Sai institute of skill development"
+  duration: "2018 - 2019"
+  highlights:
+    - "Provided training to 120+ trainees in various computer courses like Microsoft Office, HTML,CSS, WordPress, C, C++""
+    - "Prepared trainees for interviews and guided for job application"""
+    - "Maintained existing computer programs by making minor modifications"""
+    - "Supervised the JSD exams held at the Institution by the National Skill Development Corporation"""
+    - "Improved trainee's placement percentage to 100%"""
+
+

@@ -1,0 +1,14 @@
+- degree: "Post Graduate Certificate in Cloud Computing, Big Data, IT & AI"
+  institution: "Seneca Polytechnic"
+  duration: "2024 - 2026"
+  description: "Advanced studies focusing on cloud infrastructure, large-scale data systems, and machine learning pipelines."
+  highlights:
+    - "Relevant coursework: Cloud Architecture, Big Data Analytics, Deep Learning"
+
+- degree: "Bachelor of Technology in Computer Science"
+  institution: "University Name"
+  duration: "2018 - 2022"
+  description: "Foundational education in software engineering, algorithms, and data structures."
+  highlights:
+    - "Graduated with Honors"
+    - "Capstone project focused on AI and Data Science"

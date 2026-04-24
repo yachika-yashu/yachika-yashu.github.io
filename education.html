@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Skills
-permalink: /skills/
+title: Education
+permalink: /education/
 custom_css: sidebar
 ---
 <link rel="stylesheet" href="{{ '/assets/css/sidebar.css' | relative_url }}">
@@ -23,9 +23,9 @@ custom_css: sidebar
                     <h3 class="sidebar-title">Experience</h3>
                     <ul class="sidebar-list">
                         <li><a href="/experience/">Work History</a></li>
-                        <li><a href="/skills/" class="active">Skills & Expertise</a></li>
+                        <li><a href="/skills/">Skills & Expertise</a></li>
                         <li><a href="/certifications/">Certifications</a></li>
-                        <li><a href="/education/">Education</a></li>
+                        <li><a href="/education/" class="active">Education</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-section">
@@ -40,41 +40,26 @@ custom_css: sidebar
 
         <!-- Main Content -->
         <div class="col col-12 col-t-9">
-            <h1>Skills & Expertise</h1>
-            
-            <section class="skills-section">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    {% for category in site.data.skills.technical_skills %}
-                        <div class="skill-category">
-                            <h3>{{ category.name }}</h3>
-                            <div class="skills-badge-container">
-                                {% for skill in category.items %}
-                                    <span class="skill-badge">{{ skill }}</span>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </section>
+            <h1>Education</h1>
+            <p>My academic background and formal degrees.</p>
 
-            <section class="skills-section">
-                <h2>Tools & Platforms</h2>
-                <div class="tools-list">
-                    {% for tool in site.data.skills.tools_and_platforms %}
-                        <span class="tool-tag">{{ tool }}</span>
-                    {% endfor %}
+            {% for edu in site.data.education %}
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>{{ edu.degree }}</h3>
+                        <span class="duration">{{ edu.duration }}</span>
+                    </div>
+                    <p class="company">{{ edu.institution }}</p>
+                    <p>{{ edu.description }}</p>
+                    {% if edu.highlights %}
+                        <ul class="highlights">
+                            {% for highlight in edu.highlights %}
+                                <li>{{ highlight }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                 </div>
-            </section>
-
-            <section class="skills-section">
-                <h2>Domains of Expertise</h2>
-                <div class="domains-list">
-                    {% for domain in site.data.skills.domains %}
-                        <span class="domain-tag">{{ domain }}</span>
-                    {% endfor %}
-                </div>
-            </section>
+            {% endfor %}
         </div>
     </div>
 </div>

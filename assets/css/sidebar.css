@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
 html {
     scroll-behavior: smooth !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, .header-title, .header-subtitle, .header-tagline, .menu-links .item .item-link {
+    font-family: 'Outfit', sans-serif !important;
 }
 
 body {
@@ -276,6 +282,12 @@ body {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    box-shadow: 0 4px 12px rgba(245, 133, 6, 0.15);
+    transform: translateY(-2px);
 }
 
 .skill-category h3 {
@@ -284,27 +296,27 @@ body {
     font-size: 16px;
 }
 
-.skill-category ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.skills-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.skill-category li {
-    padding: 8px 0;
-    color: #555;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.skill-category li:last-child {
-    border-bottom: none;
-}
-
-.skill-category li:before {
-    content: "• ";
+.skill-badge {
+    background-color: #fff;
     color: #f58506;
-    font-weight: bold;
-    margin-right: 8px;
+    border: 1px solid #f58506;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.skill-badge:hover {
+    background-color: #f58506;
+    color: #fff !important;
 }
 
 /* Tags and Tools Styling */
