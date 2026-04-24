@@ -29,8 +29,8 @@ custom_css: sidebar
                 <div class="sidebar-section">
                     <h3 class="sidebar-title">About & Writing</h3>
                     <ul class="sidebar-list">
-                        <li><a href="/" class="active"><i class="icon ion-md-person"></i> About Me</a></li>
-                        <li><a href="/blog/"><i class="icon ion-md-paper"></i> Blog Posts</a></li>
+                        <li><a href="/"><i class="icon ion-md-person"></i> About Me</a></li>
+                        <li><a href="/blog/" class="active"><i class="icon ion-md-paper"></i> Blog Posts</a></li>
                         <li><a href="/publications/"><i class="icon ion-md-book"></i> Publications</a></li>
                     </ul>
                 </div>
@@ -39,26 +39,12 @@ custom_css: sidebar
 
         <!-- Main Content -->
         <div class="col col-12 col-t-9">
-            <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
-                <h1 style="color: #f58506; margin-top: 0; display: flex; align-items: center; gap: 10px;">
-                    <i class="icon ion-md-person"></i> About Me
-                </h1>
-                
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">
-                    Hello! I'm <strong>Yachika Anand</strong>, a passionate <strong>Data Solutions Architect</strong> and AI Specialist. 
-                    I specialize in designing and implementing end-to-end data pipelines, developing scalable AI architectures, and turning raw data into actionable business intelligence.
-                </p>
-
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">
-                    My expertise spans across data engineering, machine learning pipelines, and the orchestration of cutting-edge applications using RAG (Retrieval-Augmented Generation), LangGraph, and large-scale semantic caching. 
-                    I view machine learning not just as models, but as robust, reproducible systems.
-                </p>
-
-                <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
-                    <a href="/experience/" class="btn btn-primary"><i class="icon ion-md-briefcase"></i> View My Experience</a>
-                    <a href="/projects/" class="btn btn-secondary"><i class="icon ion-md-folder"></i> Browse Projects</a>
-                </div>
+            <div class="row">
+                {% for post in paginator.posts %}
+                    {% include post-card.html %}
+                {% endfor %}
             </div>
+            {% include pagination.html %}
         </div>
     </div>
 </div>
