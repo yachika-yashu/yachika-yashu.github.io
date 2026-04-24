@@ -51,6 +51,7 @@ body {
 .menu-links .item .item-link i {
     color: inherit !important;
     margin-right: 6px;
+    font-size: 1.3em;
 }
 .menu-links .item .item-link:hover {
     background-color: #f58506;
@@ -60,6 +61,8 @@ body {
 /* Colored Icons Global */
 i.icon, i.ion, .sidebar-list a i {
     color: #f58506 !important;
+    font-size: 1.3em;
+    vertical-align: middle;
 }
 .sidebar-list a:hover i, .sidebar-list a.active i {
     color: #f58506 !important;
