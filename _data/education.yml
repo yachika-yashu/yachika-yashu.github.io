@@ -1,14 +1,16 @@
-- degree: "Post Graduate Certificate in Cloud Computing, Big Data, IT & AI"
-  institution: "Seneca Polytechnic"
-  duration: "2024 - 2026"
-  description: "Advanced studies focusing on cloud infrastructure, large-scale data systems, and machine learning pipelines."
+- degree: "Master's degree in Information Technology"
+  institution: "University Institute of Engineering and Technology, Panjab University, Chandigarh"
+  duration: "2019 - 2021"
+  description: ""
   highlights:
-    - "Relevant coursework: Cloud Architecture, Big Data Analytics, Deep Learning"
+    - "CGPA: 9/10"
+    - "Thesis on Energy Efficient Resource Allocation using Tabu Search and Gradient Descent Method in 5G Wireless Devices "
+    - "Relevant coursework: Cloud Architecture, Big Data Analytics, Deep Learning, 5G Networking"
 
-- degree: "Bachelor of Technology in Computer Science"
-  institution: "University Name"
-  duration: "2018 - 2022"
+- degree: "Bachelor of Technology in Electronics and Communication Engineering"
+  institution: "DAV Institute of Engineering and Technology"
+  duration: "2013 - 2017"
   description: "Foundational education in software engineering, algorithms, and data structures."
   highlights:
     - "Graduated with Honors"
-    - "Capstone project focused on AI and Data Science"
+    
