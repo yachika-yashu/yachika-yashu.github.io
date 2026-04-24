@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth !important;
 }
 
-body, h1, h2, h3, h4, h5, h6, .header-title, .header-subtitle, .header-tagline, .menu-links .item .item-link {
+body, h1, h2, h3, h4, h5, h6, .header-title, .header-subtitle, .header-tagline, .menu-links .item .item-link, p, a, span, li, div {
     font-family: 'Outfit', sans-serif !important;
 }
 
@@ -20,8 +20,49 @@ body {
     color: #333 !important;
 }
 
-.header-title, .header-subtitle, .header-tagline, .header-box, .menu-links .item .item-link {
+.header-title, .header-subtitle, .header-tagline, .header-box {
     color: #333 !important;
+}
+
+/* Header Action Buttons (GitHub, LinkedIn, Resume) */
+.menu-links .list-reset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.menu-links .item {
+    list-style: none !important;
+    margin: 0 !important;
+    width: auto !important;
+}
+.menu-links .item .item-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #FFFDF8;
+    border: 1px solid #f58506;
+    color: #f58506 !important;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+.menu-links .item .item-link i {
+    color: inherit !important;
+    margin-right: 6px;
+}
+.menu-links .item .item-link:hover {
+    background-color: #f58506;
+    color: #fff !important;
+}
+
+/* Colored Icons Global */
+i.icon, i.ion, .sidebar-list a i {
+    color: #f58506 !important;
+}
+.sidebar-list a:hover i, .sidebar-list a.active i {
+    color: #f58506 !important;
 }
 
 .header-subtitle {
@@ -32,7 +73,7 @@ body {
     color: #555 !important;
 }
 
-.footer-bottom .copyright p a:hover, .footer-bottom .footer-social ul li a:hover, .menu-links .item .item-link:hover {
+.footer-bottom .copyright p a:hover, .footer-bottom .footer-social ul li a:hover {
     color: #f58506 !important;
 }
 
