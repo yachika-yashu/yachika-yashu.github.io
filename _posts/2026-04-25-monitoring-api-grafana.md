@@ -2,6 +2,7 @@
 layout: post
 title: "Monitoring my API using Grafana + Prometheus (with Docker)"
 date: 2026-04-25
+image: "grafana-cover.png"
 description: "Setting up a simple, reproducible monitoring system to track API request volume and response times."
 ---
 ## 🧠 The situation
