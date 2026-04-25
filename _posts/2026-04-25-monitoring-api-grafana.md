@@ -1,4 +1,9 @@
-**Step-by-step: Monitoring my API using Grafana + Prometheus (with Docker)**
+---
+layout: post
+title: "Monitoring my API using Grafana + Prometheus (with Docker)"
+date: 2026-04-25
+description: "Setting up a simple, reproducible monitoring system to track API request volume and response times."
+---
 ## 🧠 The situation
 I had a simple API running with FastAPI. It worked, but I had no visibility into its behavior.
 - I couldn’t track incoming requests
