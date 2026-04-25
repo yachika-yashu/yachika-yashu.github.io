@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Monitoring my API using Grafana + Prometheus (with Docker)"
+title: "How I monitor my API using Grafana + Prometheus (with Docker)"
 date: 2026-04-25
 image: "grafana-cover.png"
-description: "Setting up a simple, reproducible monitoring system to track API request volume and response times."
+description: "Setting up a simple & reproducible monitoring system to track API request volume and response times."
 ---
 ## 🧠 The situation
 I had a simple API running with FastAPI. It worked, but I had no visibility into its behavior.
@@ -91,6 +91,7 @@ networks:
 ```
 ## 📊 Step 4: Configure Prometheus
 `prometheus.yml`:
+
 ```
 global:  
   scrape_interval: 15s  
@@ -100,10 +101,13 @@ scrape_configs:
     static_configs:  
       - targets: ['fastapi:8000']
 ```
+
 ## ▶️ Step 5: Run the system
+
 ```
 docker-compose up --build
 ```
+
 ## 🌐 Step 6: Verify services
 - FastAPI → [http://localhost:8000/](http://localhost:8000/)
 - Metrics → [http://localhost:8000/metrics](http://localhost:8000/metrics)
