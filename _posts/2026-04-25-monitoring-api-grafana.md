@@ -15,11 +15,13 @@ So I decided to implement a basic monitoring stack using:
 - Prometheus (metrics collection)
 - Grafana (visualization)
 - Docker (reproducibility)
+
 ## 🎯 Objective
 Set up a simple, reproducible monitoring system to:
 - Track API request volume
 - Measure response times
 - Visualize performance metrics
+
 ## 📁 Project structure
 project-folder/  
 │  
@@ -39,10 +41,12 @@ project-folder/
 from prometheus_fastapi_instrumentator import Instrumentator  
 Instrumentator().instrument(app).expose(app)
 ```
+
 ### 1.2 Update `requirements.txt`:
 ```
 prometheus-fastapi-instrumentator
 ```
+
 ## 🐳 Step 2: Containerize the application
 ### Dockerfile (if not already containerized)
 ```
@@ -53,6 +57,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt  
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 ```
+
 ## 🔗 Step 3: Define services for prometheus and Grafana with Docker Compose
 docker-compose.yml
 ```
@@ -89,6 +94,7 @@ networks:
   monitor-net:  
     driver: bridge
 ```
+
 ## 📊 Step 4: Configure Prometheus
 `prometheus.yml`:
 
@@ -113,12 +119,14 @@ docker-compose up --build
 - Metrics → [http://localhost:8000/metrics](http://localhost:8000/metrics)
 - Prometheus → [http://localhost:9090/](http://localhost:9090/)
 - Grafana → [http://localhost:3000](http://localhost:3000)
+
 ## 🔍 Step 7: Validate metrics
 In Prometheus [http://localhost:9090/](http://localhost:9090/), run:
 ```
 http_requests_total
 ```
 If no data appears, check the `/metrics` endpoint first.
+
 ## 📈 Step 8: Connect Grafana to Prometheus
 - In Grafana [http://localhost:3000](http://localhost:3000) login 
 - Go to **Add Data Source**
@@ -126,6 +134,7 @@ If no data appears, check the `/metrics` endpoint first.
 - Set URL to:
 http://prometheus:9090
 - Click **Save & Test**
+
 ## 📊 Step 9: Build dashboards
 This is the fun part.
 go to building a dashboard , then Use metrics like:
@@ -137,17 +146,21 @@ From these, you can build panels for:
 - response time
 - performance spikes
 Even a simple dashboard already gives way more visibility than before.
+
 ## ✅ Outcome
 After implementing this:
 - API traffic is visible in real time
 - Latency can be tracked and analyzed
 - System behavior is no longer a black box
+
 ## ⚠️ Common issues
 - No metrics → check `/metrics`
 - Grafana connection fails → verify `prometheus:9090`
 - Port conflicts → update `docker-compose.yml`
+
 ## 💡 Key takeaway
 Monitoring is not optional for production systems.
 Even a simple setup using Prometheus and Grafana can significantly improve system visibility and reliability.
+
 ## 🔗 Next step
 Extend this setup with **alerting** to detect failures automatically.
