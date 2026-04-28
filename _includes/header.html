@@ -3,6 +3,7 @@
 		<div class="row">
 			<div class="col col-12">
 				<div class="header-box">
+					{% if page.url == "/" or page.url == "/index.html" %}
 					<div class="col col-3 wd-mob">
 						{% if site.avatar_image %}
 						<a href="{{ "/" | relative_url }}" class="header-avatar">
@@ -11,15 +12,19 @@
 						{% endif %}
 					</div>
 					<hr>
-					<div class="col col-9 wd-mob">
+					{% endif %}
+
+					<div class="col {% if page.url == "/" or page.url == "/index.html" %}col-9{% else %}col-12{% endif %} wd-mob">
 						{% if site.title %}
 						<h1 class="header-title">{{ site.title }}</h1>
 						{% endif %}
 						{% if site.subtitle %}
 						<h1 class="header-subtitle">{{ site.subtitle }}</h1>
 						{% endif %}
-						{% if site.description %}
-						<p class="header-tagline">{{ site.description }}</p>
+						{% if page.url == "/" or page.url == "/index.html" %}
+							{% if site.description %}
+							<p class="header-tagline">{{ site.description }}</p>
+							{% endif %}
 						{% endif %}
 						<div class="menu-links">
 							<ul class="list-reset">

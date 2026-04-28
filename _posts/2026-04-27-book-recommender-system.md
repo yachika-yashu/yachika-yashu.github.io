@@ -13,7 +13,7 @@ The system processes the massive Book-Crossing dataset (over 1 million ratings) 
 
 ## 🛠️ Tech Stack
 | Category | Tools/Libraries | Purpose |
-|----------|-----------------|---------|
+|:---:|:---:|:---:|
 | **Language** | Python 3.13 | Core logic and backend processing |
 | **Data Processing** | Pandas, Numpy | Large-scale matrix operations and data cleaning |
 | **Machine Learning**| Scikit-learn | Cosine similarity and item-based collaborative filtering |

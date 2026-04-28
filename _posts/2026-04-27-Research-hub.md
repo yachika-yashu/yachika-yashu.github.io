@@ -11,7 +11,7 @@ Research-hub is an advanced, production-grade Retrieval-Augmented Generation (RA
 
 ## 🛠️ Tech Stack
 | Category | Tools/Libraries | Purpose |
-|----------|-----------------|---------|
+|:---:|:---:|:---:|
 | **Backend Framework** | FastAPI `0.115.0+` | High-performance async API gateway for routing and dependency injection. |
 | **Agentic AI** | LangGraph `0.2.39+`, OpenAI | Orchestrates stateful AI reasoning loops, tool-calling, and response generation. |
 | **Vector Database** | Qdrant `1.11.0+` | Stores embeddings and powers extremely fast, multi-tenant semantic searches. |

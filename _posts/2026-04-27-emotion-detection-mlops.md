@@ -15,7 +15,7 @@ The pipeline guarantees that every model artifact is directly traceable to the s
 
 ## 🛠️ Tech Stack
 | Category | Tools/Libraries | Purpose |
-|----------|-----------------|---------|
+|:---:|:---:|:---:|
 | **Language** | Python 3.10 | Core programming language |
 | **MLOps & Versioning** | DVC 3.65.0, Git | Data and pipeline version control, experiment tracking |
 | **Machine Learning** | Scikit-learn 1.7.0 | Gradient Boosting Classifier, TF-IDF Vectorization, Evaluation Metrics |
