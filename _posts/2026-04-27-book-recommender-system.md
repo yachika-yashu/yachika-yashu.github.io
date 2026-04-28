@@ -1,4 +1,10 @@
-# 📁 LitLens - Machine Learning Book Recommender System
+---
+layout: post
+title: "LitLens - Machine Learning Book Recommender System"
+date: 2026-04-27
+categories: projects
+permalink: /projects/book-recommender-system/
+---
 
 ## 🎯 Overview
 LitLens is a production-grade book recommendation engine that bridges the gap between exploratory data science and real-world application deployment. The project solves the problem of "information overload" in digital libraries by providing users with two distinct recommendation strategies: a popularity-based discovery engine for trending titles and a personalized collaborative filtering engine for niche discoveries. 

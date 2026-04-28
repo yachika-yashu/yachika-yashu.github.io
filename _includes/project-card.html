@@ -2,7 +2,7 @@
     <div class="project-header">
         <h3>
             {% if include.project.link %}
-                <a href="{{ include.project.link }}">{{ include.project.title }}</a>
+                <a href="{{ include.project.link | relative_url }}">{{ include.project.title }}</a>
             {% else %}
                 {{ include.project.title }}
             {% endif %}
@@ -22,7 +22,7 @@
     {% endif %}
     <div class="project-actions">
         {% if include.project.link %}
-            <a href="{{ include.project.link }}" class="btn btn-primary"><i class="icon ion-md-document"></i> Project Summary</a>
+            <a href="{{ include.project.link | relative_url }}" class="btn btn-primary"><i class="icon ion-md-document"></i> Project Summary</a>
         {% endif %}
         {% if include.project.github_link %}
             <a href="{{ include.project.github_link }}" class="btn btn-secondary"><i class="icon ion-logo-github"></i> GitHub Code</a>

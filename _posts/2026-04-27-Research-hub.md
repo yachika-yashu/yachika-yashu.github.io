@@ -1,4 +1,10 @@
-# 📁 Research-hub - Collaborative Research Intelligence Platform
+---
+layout: post
+title: "Research-hub - Collaborative Research Intelligence Platform"
+date: 2026-04-27
+categories: projects
+permalink: /projects/research-hub/
+---
 
 ## 🎯 Overview
 Research-hub is an advanced, production-grade Retrieval-Augmented Generation (RAG) platform built for research teams, legal professionals, and academics. It solves the massive inefficiency of finding specific data points, methodologies, and figures across disjointed PDF repositories by ingesting complex documents and providing an intelligent, agentic chat interface. Instead of naive keyword search, Research-hub utilizes LangGraph to create an AI reasoning engine that formulates search strategies against a Qdrant vector database. It supports strict multi-tenant isolation, real-time response streaming via Server-Sent Events (SSE), layout-aware document chunking using Docling, and highly optimized Redis semantic caching to drastically reduce LLM API latency and token costs.

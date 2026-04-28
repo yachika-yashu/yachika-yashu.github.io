@@ -1,4 +1,10 @@
-# 📁 Emotion Detection MLOps Pipeline - Reproducible ML Pipeline with DVC
+---
+layout: post
+title: "Emotion Detection MLOps Pipeline"
+date: 2026-04-27
+categories: projects
+permalink: /projects/emotion-detection-mlops/
+---
 
 ## 🎯 Overview
 This project builds a robust, reproducible Machine Learning pipeline for Emotion Detection, classifying text data (tweets) into happiness or sadness sentiments. Rather than relying on a monolithic Jupyter Notebook, the project adopts a production-ready MLOps architecture using Data Version Control (DVC) and the Cookiecutter Data Science structure. 

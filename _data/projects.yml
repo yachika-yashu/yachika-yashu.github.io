@@ -3,7 +3,7 @@
   description: "Built a production-grade book recommendation engine that bridges the gap between exploratory data science and real-world application deployment. The project solves the problem of 'information overload' in digital libraries by providing users with two distinct recommendation strategies: a popularity-based discovery engine for trending titles and a personalized collaborative filtering engine for niche discoveries."
   technologies: ["Python","FastAPI","Pandas","Numpy", "Scikit-learn", "Streamlit"]
   date: "2025-10"
-  link: "_posts\\book-recommender-system.md"
+  link: "/projects/book-recommender-system/"
   github_link: "https://github.com/yachika-yashu/book-recommender-system"
 
 - title: "Emotion Detection MLOps Pipeline"
@@ -11,7 +11,7 @@
   description: "Built a robust, reproducible Machine Learning pipeline for Emotion Detection using DVC, ensuring strict version control of datasets, models, and code."
   technologies: ["Python", "DVC", "Scikit-learn", "NLTK", "Pandas"]
   date: "2026-04"
-  link: "_posts\\emotion-detection-mlops.md"
+  link: "/projects/emotion-detection-mlops/"
   github_link: "https://github.com/yachika-yashu/emotion_detection_MLOps_pipeline"
 
 
@@ -21,6 +21,6 @@
   description: "Developed a collaborative Research Intelligence Platform to streamline and enhance the research workflow for data scientists. Built a robust, containerized architecture that supports team-based document ingestion, intelligent semantic search, and AI-driven question-answering capabilities."
   technologies: ["FastAPI","Streamlit","LangGraph","LLMs","Vector DB","Docker","Kubernetes", "PostgreSQL", "Redis", "RAG", "JWT", "AI","Langchain","Qdrant"]
   date: "2026-04"
-  link: "_posts\\Research-hub.md"
+  link: "/projects/research-hub/"
   github_link: "https://github.com/yachika-yashu/Research-hub"
 
