@@ -506,3 +506,59 @@ i.icon, i.ion, .sidebar-list a i {
     background-color: #f58506;
     color: #fff !important;
 }
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    background: #FFFDF8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0e0e0;
+}
+
+table thead tr {
+    background-color: #f58506 !important;
+    color: #ffffff !important;
+    text-align: left;
+    font-weight: 600;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #eeeeee;
+    transition: background-color 0.2s ease;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #fcf6ed;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #f58506;
+}
+
+table tbody tr:hover {
+    background-color: #fff1e0;
+}
+
+table th {
+    background-color: #f58506 !important;
+    color: white !important;
+}
+
+/* Responsive Table Wrapper */
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
