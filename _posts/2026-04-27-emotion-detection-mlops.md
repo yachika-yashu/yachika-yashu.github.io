@@ -14,6 +14,7 @@ By decentralizing the machine learning workflow into distinct, testable stages�
 The pipeline guarantees that every model artifact is directly traceable to the specific code, data, and parameters used to create it, mitigating the common "it works on my machine" problem in data science. It demonstrates a high standard of ML engineering, ideal for collaborative environments and continuous integration deployment.
 
 ## 🛠️ Tech Stack
+
 | Category | Tools/Libraries | Purpose |
 |:---:|:---:|:---:|
 | **Language** | Python 3.10 | Core programming language |
@@ -45,6 +46,7 @@ emotion_detection_MLOps_pipeline/
 ```
 
 ## 🔍 Architecture & Data Flow
+
 ```mermaid
 graph TD
     A[Data Source CSV] -->|data_ingestion.py| B(data/raw)

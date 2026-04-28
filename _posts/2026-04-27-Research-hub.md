@@ -10,6 +10,7 @@ permalink: /projects/research-hub/
 Research-hub is an advanced, production-grade Retrieval-Augmented Generation (RAG) platform built for research teams, legal professionals, and academics. It solves the massive inefficiency of finding specific data points, methodologies, and figures across disjointed PDF repositories by ingesting complex documents and providing an intelligent, agentic chat interface. Instead of naive keyword search, Research-hub utilizes LangGraph to create an AI reasoning engine that formulates search strategies against a Qdrant vector database. It supports strict multi-tenant isolation, real-time response streaming via Server-Sent Events (SSE), layout-aware document chunking using Docling, and highly optimized Redis semantic caching to drastically reduce LLM API latency and token costs.
 
 ## 🛠️ Tech Stack
+
 | Category | Tools/Libraries | Purpose |
 |:---:|:---:|:---:|
 | **Backend Framework** | FastAPI `0.115.0+` | High-performance async API gateway for routing and dependency injection. |
@@ -40,6 +41,7 @@ Research-hub is an advanced, production-grade Retrieval-Augmented Generation (RA
 *(Total Files: ~18 root/system files + application source code)*
 
 ## 🔍 Architecture & Data Flow
+
 ```mermaid
 graph TD
     A[User / Streamlit UI] -->|Upload PDF| B(FastAPI: /ingest)

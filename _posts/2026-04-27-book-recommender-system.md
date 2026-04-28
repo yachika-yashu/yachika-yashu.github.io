@@ -12,6 +12,7 @@ LitLens is a production-grade book recommendation engine that bridges the gap be
 The system processes the massive Book-Crossing dataset (over 1 million ratings) and applies rigorous data pruning to handle matrix sparsity. By filtering for "experienced readers" and "famous books," it ensures high-quality recommendations while maintaining computational efficiency. The final product is not just a model, but a full-stack experience featuring a high-performance FastAPI backend and a visually stunning "Glassmorphism" web interface.
 
 ## 🛠️ Tech Stack
+
 | Category | Tools/Libraries | Purpose |
 |:---:|:---:|:---:|
 | **Language** | Python 3.13 | Core logic and backend processing |
@@ -36,6 +37,7 @@ The project follows a modular architecture separating the ML pipeline from the a
 - **`Root`**: Data files (.csv), Documentation, and Configs.
 
 ## 🔍 Architecture & Data Flow
+
 ```mermaid
 graph TD
     A[Raw CSV Data] --> B[src/train.py]
