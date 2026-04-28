@@ -542,7 +542,11 @@ i.ion,
     color: #fff !important;
 }
 
-/* Table Styling - Aggressive Theme Override */
+/* Table Styling - Maximum Specificity Override */
+.container .col table,
+.container .col-t-9 table,
+.article-content table,
+.post-content table,
 table {
     width: 100% !important;
     border-collapse: collapse !important;
@@ -555,6 +559,8 @@ table {
     border: 1px solid #e0e0e0 !important;
 }
 
+.container .col table thead tr,
+.container .col table thead th,
 table thead tr,
 table thead th {
     background-color: #f58506 !important;
@@ -570,6 +576,7 @@ table th {
     text-align: left !important;
 }
 
+.container .col table td,
 table td {
     padding: 12px 15px !important;
     border: 1px solid #e0e0e0 !important;
@@ -581,10 +588,12 @@ table tbody tr {
     border-bottom: 1px solid #eeeeee !important;
 }
 
+.container .col table tbody tr:nth-of-type(even) td,
 table tbody tr:nth-of-type(even) td {
     background-color: #f9f9f9 !important;
 }
 
+.container .col table tbody tr:hover td,
 table tbody tr:hover td {
     background-color: #fff1e0 !important;
 }
@@ -595,6 +604,7 @@ table tbody tr:last-of-type {
 
 /* Responsive Table Wrapper */
 @media screen and (max-width: 600px) {
+    .container .col table,
     table {
         display: block !important;
         overflow-x: auto !important;
