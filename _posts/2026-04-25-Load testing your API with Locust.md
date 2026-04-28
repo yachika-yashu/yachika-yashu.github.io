@@ -2,7 +2,7 @@
 layout: post
 title: "How I Benchmarked My API: From Guesswork to Real Performance Insights Using Locust"
 date: 2026-04-25
-image: "img/locust.png"
+image: "locust.png"
 description: "Load testing your API with Locust"
 ---
 # 🚀 
