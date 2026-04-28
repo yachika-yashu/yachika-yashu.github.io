@@ -4,7 +4,22 @@ html {
     scroll-behavior: smooth !important;
 }
 
-body, h1, h2, h3, h4, h5, h6, .header-title, .header-subtitle, .header-tagline, .menu-links .item .item-link, p, a, span, li, div {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.header-title,
+.header-subtitle,
+.header-tagline,
+.menu-links .item .item-link,
+p,
+a,
+span,
+li,
+div {
     font-family: 'Outfit', sans-serif !important;
 }
 
@@ -15,12 +30,19 @@ body {
 }
 
 /* Override Theme Defaults for Orange Cream */
-.header, .footer, .article-first, .article-head, .article-box {
+.header,
+.footer,
+.article-first,
+.article-head,
+.article-box {
     background-color: #FFF9F0 !important;
     color: #333 !important;
 }
 
-.header-title, .header-subtitle, .header-tagline, .header-box {
+.header-title,
+.header-subtitle,
+.header-tagline,
+.header-box {
     color: #333 !important;
 }
 
@@ -30,11 +52,13 @@ body {
     flex-wrap: wrap;
     gap: 12px;
 }
+
 .menu-links .item {
     list-style: none !important;
     margin: 0 !important;
     width: auto !important;
 }
+
 .menu-links .item .item-link {
     display: inline-flex;
     align-items: center;
@@ -48,26 +72,33 @@ body {
     transition: all 0.3s ease;
     margin-top: 10px;
 }
+
 .menu-links .item .item-link i {
     color: inherit !important;
     margin-right: 6px;
     font-size: 1.3em;
 }
+
 .menu-links .item .item-link:hover {
     background-color: #f58506;
     color: #fff !important;
 }
 
 /* Colored Icons Global */
-i.icon, i.ion, .sidebar-list a i {
+i.icon,
+i.ion,
+.sidebar-list a i {
     color: #f58506 !important;
     font-size: 1.3em;
     vertical-align: middle;
 }
+
 .sidebar-list a i {
     margin-right: 10px;
 }
-.sidebar-list a:hover i, .sidebar-list a.active i {
+
+.sidebar-list a:hover i,
+.sidebar-list a.active i {
     color: #f58506 !important;
 }
 
@@ -75,11 +106,15 @@ i.icon, i.ion, .sidebar-list a i {
     border-bottom: 2px solid #f58506 !important;
 }
 
-.footer-top .logo-text, .footer-bottom .copyright p, .footer-bottom .copyright p a, .footer-bottom .footer-social ul li a {
+.footer-top .logo-text,
+.footer-bottom .copyright p,
+.footer-bottom .copyright p a,
+.footer-bottom .footer-social ul li a {
     color: #555 !important;
 }
 
-.footer-bottom .copyright p a:hover, .footer-bottom .footer-social ul li a:hover {
+.footer-bottom .copyright p a:hover,
+.footer-bottom .footer-social ul li a:hover {
     color: #f58506 !important;
 }
 
@@ -160,7 +195,7 @@ i.icon, i.ion, .sidebar-list a i {
 .sidebar-list a:hover {
     color: #f58506;
     background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transform: translateX(4px);
 }
 
@@ -168,7 +203,7 @@ i.icon, i.ion, .sidebar-list a i {
     color: #f58506;
     background-color: #fff;
     font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     border-left: 4px solid #f58506;
 }
 
@@ -507,59 +542,62 @@ i.icon, i.ion, .sidebar-list a i {
     color: #fff !important;
 }
 
-/* Table Styling */
+/* Table Styling - Aggressive Theme Override */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 15px;
-    background: #FFFDF8;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border: 1px solid #e0e0e0;
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 25px 0 !important;
+    font-size: 15px !important;
+    background-color: #FFFDF8 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e0e0e0 !important;
 }
 
-table thead tr {
+table thead tr,
+table thead th {
     background-color: #f58506 !important;
     color: #ffffff !important;
-    text-align: left;
-    font-weight: 600;
-}
-
-table th, table td {
-    padding: 12px 15px;
-    border: 1px solid #e0e0e0;
-    color: #333 !important;
-}
-
-table tbody tr {
-    border-bottom: 1px solid #eeeeee;
-    transition: background-color 0.2s ease;
-}
-
-table tbody tr:nth-of-type(even) {
-    background-color: #f9f9f9;
-}
-
-table tbody tr:last-of-type {
-    border-bottom: 2px solid #f58506;
-}
-
-table tbody tr:hover {
-    background-color: #fff1e0;
 }
 
 table th {
     background-color: #f58506 !important;
-    color: white !important;
+    color: #ffffff !important;
+    padding: 12px 15px !important;
+    border: 1px solid #e0e0e0 !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+}
+
+table td {
+    padding: 12px 15px !important;
+    border: 1px solid #e0e0e0 !important;
+    color: #333 !important;
+    background-color: #FFFDF8 !important;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+table tbody tr:nth-of-type(even) td {
+    background-color: #f9f9f9 !important;
+}
+
+table tbody tr:hover td {
+    background-color: #fff1e0 !important;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #f58506 !important;
 }
 
 /* Responsive Table Wrapper */
 @media screen and (max-width: 600px) {
     table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
+        display: block !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
     }
 }
