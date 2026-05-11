@@ -16,6 +16,14 @@
 
 
 
+- title: "MedVault-RAG"
+  category: "AI"
+  description: "Built a full-stack, production-ready AI research platform for healthcare teams that transforms a static PDF library into a conversational knowledge base. Features a multi-stage agentic RAG pipeline with hybrid search, cross-encoder reranking, LangGraph agent with self-correction, real-time SSE streaming, multi-tenant data isolation, and a Smart Research mode that auto-ingests PubMed papers and answers clinical questions in under 60 seconds."
+  technologies: ["Python", "FastAPI", "LangGraph", "Qdrant", "Redis", "PostgreSQL", "Docling", "OpenAI", "Streamlit", "Docker", "Nginx", "LangSmith", "RAG"]
+  date: "2026-05"
+  link: "/projects/MedVault-RAG/"
+  github_link: "https://github.com/yachika-yashu/MedVault"
+
 - title: "Collaborative Research Intelligence Platform"
   category: "AI"
   description: "Developed a collaborative Research Intelligence Platform to streamline and enhance the research workflow for data scientists. Built a robust, containerized architecture that supports team-based document ingestion, intelligent semantic search, and AI-driven question-answering capabilities."
@@ -23,4 +31,3 @@
   date: "2026-04"
   link: "/projects/research-hub/"
   github_link: "https://github.com/yachika-yashu/Research-hub"
-

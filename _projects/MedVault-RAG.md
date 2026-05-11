@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "MedVault-RAG - Collaborative Research Intelligence Platform"
-date: 2026-06-10
+title: "MedVault-RAG - production-ready AI research platform for healthcare teams"
+date: 2026-05-10
 categories: projects
 permalink: /projects/MedVault-RAG/
 ---
