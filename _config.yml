@@ -27,7 +27,6 @@ collections:
 #-------------------------------
 # About Section
 subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
-location: "Cambridge, Canada"
 resume_url: "docs/Yachika_Anand_Resume.pdf"
 avatar_image: "img/profile_pic.png"
 
