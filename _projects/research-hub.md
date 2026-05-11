@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Research-hub - Collaborative Research Intelligence Platform"
 date: 2026-04-27
 categories: projects

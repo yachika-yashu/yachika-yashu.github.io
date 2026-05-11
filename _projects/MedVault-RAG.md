@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "MedVault-RAG - production-ready AI research platform for healthcare teams"
 date: 2026-05-10
 categories: projects

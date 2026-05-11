@@ -1,45 +1,138 @@
-technical_skills:
-  - name: "Languages"
-    items:
-      - "Python"
-      - "SQL"
-      - "Scala"
-      - "Bash"
+categories:
+  - name: "AI & LLMs"
+    icon: "ion-md-flash"
+    skills:
+      - name: "RAG Systems"
+        proof: "MedVault-RAG — 95% API cost reduction via two-tier semantic caching"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "LangGraph"
+        proof: "Stateful agentic loops with self-correction across MedVault-RAG & Research Hub"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "LangChain"
+        proof: "Collaborative Research Intelligence Platform — multi-tenant RAG pipeline"
+        link: "/projects/research-hub/"
+
+      - name: "Semantic Search"
+        proof: "Hybrid dense + sparse vector search with cross-encoder reranking in MedVault-RAG"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "Prompt Engineering"
+        proof: "Guardrails, faithfulness scoring, and query reformulation in production RAG"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "Vector Databases (Qdrant)"
+        proof: "Multi-tenant hybrid search with BM25 + semantic vectors in MedVault-RAG"
+        link: "/projects/MedVault-RAG/"
+
+  - name: "MLOps & DevOps"
+    icon: "ion-md-git-network"
+    skills:
+      - name: "DVC"
+        proof: "Emotion Detection MLOps Pipeline — full experiment reproducibility with one command"
+        link: "/projects/emotion-detection-mlops/"
+
+      - name: "Docker"
+        proof: "Docker Foundations Professional Certificate — Docker, Inc. (2025)"
+        link: "/certifications/"
+
+      - name: "FastAPI"
+        proof: "Production backend for MedVault-RAG and Book Recommender System"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "CI/CD"
+        proof: "Automated Docker Compose production stack with Nginx, Gunicorn & Certbot"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "MLflow"
+        proof: "Experiment tracking and model versioning in Emotion Detection MLOps Pipeline"
+        link: "/projects/emotion-detection-mlops/"
+
+      - name: "Kubernetes"
+        proof: "Container orchestration in Collaborative Research Intelligence Platform"
+        link: "/projects/research-hub/"
 
   - name: "Machine Learning"
-    items:
-      - "Scikit-learn"
-      - "TensorFlow"
-      - "PyTorch"
-      - "XGBoost"
+    icon: "ion-md-analytics"
+    skills:
+      - name: "Python"
+        proof: "Primary language across all 4 portfolio projects — from data to deployment"
+        link: "/projects/"
+
+      - name: "Scikit-learn"
+        proof: "Book Recommender System — collaborative filtering engine in production"
+        link: "/projects/book-recommender-system/"
+
+      - name: "NLP"
+        proof: "Emotion Detection MLOps Pipeline — text classification with NLTK pipeline"
+        link: "/projects/emotion-detection-mlops/"
+
+      - name: "Deep Learning"
+        proof: "Seneca Polytechnic: Cloud, Big Data, IT & AI — PyTorch & TensorFlow projects"
+        link: "/certifications/"
+
+      - name: "Model Evaluation"
+        proof: "Faithfulness scoring and A/B testing across RAG and ML projects"
+        link: "/projects/MedVault-RAG/"
 
   - name: "Data Engineering"
-    items:
-      - "Apache Spark"
-      - "DVC (Data Version Control)"
-      - "Airflow"
-      - "Docker"
+    icon: "ion-md-cloud"
+    skills:
+      - name: "PostgreSQL"
+        proof: "Multi-tenant user auth, trace logs, and analytics in MedVault-RAG"
+        link: "/projects/MedVault-RAG/"
 
-  - name: "AI & LLMs"
-    items:
-      - "LangGraph"
-      - "LangChain"
-      - "RAG Systems"
-      - "Semantic Search"
+      - name: "Redis"
+        proof: "Sub-millisecond exact-match cache reducing LLM calls in MedVault-RAG"
+        link: "/projects/MedVault-RAG/"
 
-tools_and_platforms:
-  - "Jupyter Notebooks"
-  - "Git & GitHub"
-  - "AWS (EC2, S3, Lambda)"
-  - "Docker & Kubernetes"
-  - "PostgreSQL"
-  - "MongoDB"
-  - "Apache Kafka"
+      - name: "SQL"
+        proof: "Query optimization: 8 hours → 45 minutes — real production systems thinking"
+        link: "/experience/"
 
-domains:
-  - "Machine Learning"
-  - "Statistical Analysis"
-  - "Data Engineering"
-  - "Causal Inference"
-  - "Time Series Analysis"
-  - "NLP & LLMs"
+      - name: "ETL/ELT Pipelines"
+        proof: "Real-time data retrieval pipelines at No Worker Left Behind"
+        link: "/experience/"
+
+      - name: "Data Validation & Governance"
+        proof: "Strict data lineage and experiment versioning in all ML pipelines"
+        link: "/projects/emotion-detection-mlops/"
+
+  - name: "Analytics & BI"
+    icon: "ion-md-bar-chart"
+    skills:
+      - name: "Power BI"
+        proof: "Automated yearly reporting dashboards at No Worker Left Behind"
+        link: "/experience/"
+
+      - name: "A/B Testing"
+        proof: "25% conversion lift through data-driven optimization at IEC Hamilton"
+        link: "/experience/"
+
+      - name: "Streamlit"
+        proof: "Real-time SSE streaming frontend for MedVault-RAG and Book Recommender"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "D3.js"
+        proof: "Trained 330+ students at Conestoga College on interactive data visualization"
+        link: "/experience/"
+
+  - name: "Cloud & Infrastructure"
+    icon: "ion-md-cloud-upload"
+    skills:
+      - name: "Microsoft Azure"
+        proof: "Microsoft Certified: Azure Fundamentals (2026)"
+        link: "/certifications/"
+
+      - name: "Nginx"
+        proof: "SSL termination, rate limiting, and reverse proxy in MedVault-RAG production"
+        link: "/projects/MedVault-RAG/"
+
+      - name: "AWS"
+        proof: "S3, EC2, SageMaker — cloud-native ML deployment and storage"
+        link: "/experience/"
+
+      - name: "LangSmith"
+        proof: "Full agent trace observability in MedVault-RAG production pipeline"
+        link: "/projects/MedVault-RAG/"

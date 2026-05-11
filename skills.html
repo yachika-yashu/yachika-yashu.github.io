@@ -5,6 +5,28 @@ permalink: /skills/
 custom_css: sidebar
 ---
 <link rel="stylesheet" href="{{ '/assets/css/sidebar.css?v=4' | relative_url }}">
+<style>
+  .skills-category { margin-bottom: 2.5rem; }
+  .skills-category h2 { color: #333; border-bottom: 2px solid #f58506; padding-bottom: 6px; margin-bottom: 1.2rem; }
+  .skill-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+  .skill-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-left: 4px solid #f58506;
+    border-radius: 6px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: box-shadow 0.15s ease;
+  }
+  .skill-card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.09); }
+  .skill-card-name { font-weight: 600; font-size: 15px; color: #222; }
+  .skill-card-proof { font-size: 13px; color: #666; line-height: 1.5; flex: 1; }
+  .skill-card-link { font-size: 12px; color: #f58506; font-weight: 500; text-decoration: none; align-self: flex-start; }
+  .skill-card-link:hover { text-decoration: underline; }
+</style>
+
 <div class="container">
     <div class="row">
         <!-- Left Sidebar -->
@@ -42,40 +64,24 @@ custom_css: sidebar
         <!-- Main Content -->
         <div class="col col-12 col-t-9">
             <h1>Skills & Expertise</h1>
-            
-            <section class="skills-section">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    {% for category in site.data.skills.technical_skills %}
-                        <div class="skill-category">
-                            <h3>{{ category.name }}</h3>
-                            <div class="skills-badge-container">
-                                {% for skill in category.items %}
-                                    <span class="skill-badge">{{ skill }}</span>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </section>
+            <p style="color:#666; margin-bottom: 2rem;">Every skill below is backed by a project, certification, or measurable outcome — not just listed.</p>
 
-            <section class="skills-section">
-                <h2>Tools & Platforms</h2>
-                <div class="tools-list">
-                    {% for tool in site.data.skills.tools_and_platforms %}
-                        <span class="tool-tag">{{ tool }}</span>
+            {% for category in site.data.skills.categories %}
+            <section class="skills-category">
+                <h2><i class="icon {{ category.icon }}"></i> {{ category.name }}</h2>
+                <div class="skill-cards-grid">
+                    {% for skill in category.skills %}
+                    <div class="skill-card">
+                        <div class="skill-card-name">{{ skill.name }}</div>
+                        <div class="skill-card-proof">{{ skill.proof }}</div>
+                        {% if skill.link %}
+                        <a href="{{ skill.link | relative_url }}" class="skill-card-link">See proof →</a>
+                        {% endif %}
+                    </div>
                     {% endfor %}
                 </div>
             </section>
-
-            <section class="skills-section">
-                <h2>Domains of Expertise</h2>
-                <div class="domains-list">
-                    {% for domain in site.data.skills.domains %}
-                        <span class="domain-tag">{{ domain }}</span>
-                    {% endfor %}
-                </div>
-            </section>
+            {% endfor %}
         </div>
     </div>
 </div>

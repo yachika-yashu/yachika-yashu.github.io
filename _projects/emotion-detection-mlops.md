@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Emotion Detection MLOps Pipeline"
 date: 2026-04-27
 categories: projects

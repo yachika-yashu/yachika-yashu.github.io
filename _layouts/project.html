@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+        <article class="col col-12 col-t-12 post">
+            <div class="post-content">
+                <div class="post-head">
+                    {% if page.tags.size >= 1 %}
+                    <div class="post-tag">
+                        {% for tag in page.tags %}
+                        <a href="{{ site.baseurl }}/tags#{{tag}}" class="tag">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <h1 class="post-title">{{ page.title | escape }}</h1>
+                    <div class="post-info">
+                        <div class="post-time">
+                            <span class="page__meta"><i class="ion ion-md-time"></i>{% include read-time.html %}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    {{ content }}
+                </div>
+            </div>
+        </article>
+    </div>
+</div>

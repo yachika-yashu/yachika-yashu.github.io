@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "LitLens - Machine Learning Book Recommender System"
 date: 2026-04-27
 categories: projects
