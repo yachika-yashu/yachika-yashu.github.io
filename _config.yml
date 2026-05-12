@@ -9,7 +9,11 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Yachika Anand
-description: "Data Solutions Architect — building production-ready AI systems, ML pipelines, and data solutions that are traceable, reproducible, and ready for real users. 6+ years across RAG systems, MLOps, cloud architecture, and analytics."
+description: "Data Solutions Architect — building production-ready AI systems, ML pipelines, and data solutions that are traceable, reproducible, and ready for real users. 6+ years across machine learning, deep learning, RAG systems, MLOps, cloud architecture, and analytics, focused on turning data into scalable, reliable intelligence.<br>
+I design end-to-end systems that bridge raw data with production-grade AI applications.<br>
+I prioritize scalability, observability, and reproducibility in every pipeline I build.<br>
+My work spans experimentation to deployment, ensuring models perform reliably in real environments.<br>
+I believe strong data systems are not just built — they are engineered to evolve with the business."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
