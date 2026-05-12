@@ -40,105 +40,113 @@ custom_css: sidebar
         <!-- Main Content -->
         <div class="col col-12 col-t-9">
             <style>
-                .about-section h2 { color: #f58506; margin-top: 1.8rem; margin-bottom: 0.6rem; }
-                .about-section h3 { color: #f9a94e; margin-top: 1rem; margin-bottom: 0.2rem; font-size: 15px; font-weight: 600; }
+                .about-section h2 { color: #333; margin-top: 2rem; margin-bottom: 0.7rem; padding-bottom: 6px; border-bottom: 2px solid #f58506; display: inline-block; }
 
                 .role-line { font-size: 15px; font-weight: 600; color: #555; letter-spacing: 0.3px; margin-bottom: 6px; }
                 .role-line span { color: #f58506; }
                 .tagline { font-size: 16px; color: #444; line-height: 1.7; margin-bottom: 0; }
+
+                .body-text { font-size: 15px; line-height: 1.8; color: #555; margin-bottom: 0.8rem; }
+
+                .mini-list { list-style: none; padding: 0; margin: 0.5rem 0 1rem 1rem; }
+                .mini-list li { font-size: 14px; color: #555; padding: 3px 0; }
+                .mini-list li::before { content: "—"; color: #f58506; margin-right: 8px; }
+
+                .lesson-list { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
+                .lesson-list li { font-size: 14px; color: #555; padding: 7px 0 7px 14px; border-left: 2px solid #f9a94e; margin-bottom: 6px; line-height: 1.6; }
+                .lesson-list li strong { color: #333; }
+
+                .build-list { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
+                .build-list li { font-size: 14px; color: #555; padding: 5px 0; padding-left: 18px; position: relative; line-height: 1.6; }
+                .build-list li::before { content: "▸"; color: #f58506; position: absolute; left: 0; }
 
                 .stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
                 .stat-card { background: #fff; border: 1px solid #ececec; border-top: 3px solid #f58506; border-radius: 6px; padding: 14px 10px; text-align: center; }
                 .stat-number { font-size: 26px; font-weight: 700; color: #f58506; line-height: 1.1; }
                 .stat-label { font-size: 11.5px; color: #666; margin-top: 5px; line-height: 1.4; }
 
-                .build-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
-                .build-card { background: #fff; border: 1px solid #ececec; border-left: 3px solid #f58506; border-radius: 6px; padding: 14px 16px; }
-                .build-card-title { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 6px; }
-                .build-card-desc { font-size: 13px; color: #666; line-height: 1.6; }
-
-                .how-list { list-style: none; padding: 0; margin: 1rem 0 1.5rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.7rem; }
-                .how-list li { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 12px 14px; font-size: 13.5px; color: #555; line-height: 1.5; }
-                .how-list li strong { color: #333; display: block; margin-bottom: 2px; font-size: 13px; }
-
-                .interest-list { list-style: none; padding: 0; margin: 0.8rem 0 1.5rem; display: flex; flex-wrap: wrap; gap: 8px; }
-                .interest-list li { background: #fff4e6; color: #b86e00; border-radius: 20px; padding: 4px 14px; font-size: 13px; }
-
                 .philosophy-box { background: #fff; border-left: 4px solid #f58506; border-radius: 6px; padding: 16px 20px; margin: 1rem 0 1.5rem; }
                 .philosophy-box p { margin: 0; font-size: 15px; color: #333; line-height: 1.8; }
-                .philosophy-box p + p { margin-top: 6px; }
+                .philosophy-box p + p { margin-top: 8px; }
+
+                .interest-list { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; display: flex; flex-wrap: wrap; gap: 8px; }
+                .interest-list li { background: #fff4e6; color: #b86e00; border-radius: 20px; padding: 4px 14px; font-size: 13px; }
+
+                .connect-box { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 16px 20px; margin: 1rem 0 1.5rem; font-size: 14px; color: #555; line-height: 1.9; }
+                .connect-box strong { color: #333; }
             </style>
             <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
 
                 <p class="role-line">Data Scientist <span>•</span> ML Engineer <span>•</span> Data Engineer</p>
-                <p class="tagline">Building production AI systems that are reproducible, scalable, and production-ready.</p>
+                <p class="tagline">Building production AI systems that are reproducible, scalable, and ready for real users.</p>
 
-                <h2>📊 Impact</h2>
+                <h2>My Journey</h2>
+                <p class="body-text">Before AI/ML, I explored multiple roles — graphic &amp; marketing designer, web developer, clinical researcher, data analyst, engineer, and teacher. Each role shaped how I think today: I care about clean data, structured thinking, and systems that actually work in the real world.</p>
+                <p class="body-text">Three years ago, I transitioned from web development into data science and AI. At first, it felt overwhelming — too many tools, too many opinions, too much noise.</p>
+                <p class="body-text">What worked for me was simple: <strong>consistency over intensity.</strong></p>
+                <p class="body-text" style="margin-bottom: 0.3rem;">I stopped trying to learn everything and focused on one thing at a time:</p>
+                <ul class="mini-list">
+                    <li>one concept</li>
+                    <li>one implementation</li>
+                    <li>one project</li>
+                </ul>
+                <p class="body-text">That approach changed everything. Within months I started building real systems, and over time moved into production-grade AI/ML work and teaching others.</p>
+
+                <h2>How I Work</h2>
+                <p class="body-text" style="margin-bottom: 0.4rem;">I naturally think in systems, not just models.</p>
+                <ul class="lesson-list">
+                    <li><strong>From clinical research</strong>, I learned rigor: results must be reproducible, not guessed</li>
+                    <li><strong>From data analytics</strong>, I learned context: insights only matter if they solve real problems</li>
+                    <li><strong>From engineering</strong>, I learned reliability: if it doesn't scale or monitor, it's incomplete</li>
+                    <li><strong>From teaching</strong>, I learned clarity: if I can't explain it simply, I don't understand it well enough</li>
+                </ul>
+                <p class="body-text">This combination shapes everything I build today.</p>
+
+                <h2>What I Build</h2>
+                <p class="body-text" style="margin-bottom: 0.4rem;">I focus on production-ready AI systems, not just experiments.</p>
+                <ul class="build-list">
+                    <li>RAG systems and agentic AI workflows</li>
+                    <li>ML pipelines with reproducibility (MLflow, DVC, versioning)</li>
+                    <li>Data engineering pipelines (ETL/ELT, validation, governance)</li>
+                    <li>LLM systems with cost optimization (semantic caching, performance tuning)</li>
+                    <li>Cloud deployments using Docker, Kubernetes, Azure, Databricks</li>
+                </ul>
+                <p class="body-text">I care about one thing: <strong>Can this system survive in production and be trusted?</strong></p>
+
+                <h2>Impact</h2>
                 <div class="stats-grid">
-                    <div class="stat-card"><div class="stat-number">6+</div><div class="stat-label">years in data, analytics &amp; AI systems</div></div>
-                    <div class="stat-card"><div class="stat-number">95%</div><div class="stat-label">LLM cost reduction via semantic caching</div></div>
-                    <div class="stat-card"><div class="stat-number">25%</div><div class="stat-label">business metric improvement via A/B testing</div></div>
-                    <div class="stat-card"><div class="stat-number">100+</div><div class="stat-label">projects mentored &amp; reviewed</div></div>
-                    <div class="stat-card"><div class="stat-number">200+</div><div class="stat-label">students trained in data systems &amp; ML</div></div>
-                    <div class="stat-card"><div class="stat-number">2</div><div class="stat-label">peer-reviewed publications (IEEE, Xidian)</div></div>
+                    <div class="stat-card"><div class="stat-number">6+</div><div class="stat-label">years working with data &amp; AI systems</div></div>
+                    <div class="stat-card"><div class="stat-number">95%</div><div class="stat-label">reduction in LLM API cost via optimization</div></div>
+                    <div class="stat-card"><div class="stat-number">25%</div><div class="stat-label">improvement in business outcomes via A/B testing</div></div>
+                    <div class="stat-card"><div class="stat-number">100+</div><div class="stat-label">projects mentored</div></div>
+                    <div class="stat-card"><div class="stat-number">200+</div><div class="stat-label">students trained</div></div>
+                    <div class="stat-card"><div class="stat-number">2</div><div class="stat-label">peer-reviewed research publications</div></div>
                     <div class="stat-card"><div class="stat-number">50+</div><div class="stat-label">concurrent users on production systems</div></div>
                 </div>
 
-                <h2>🧠 What I Build</h2>
-                <div class="build-grid">
-                    <div class="build-card">
-                        <div class="build-card-title">Production AI Systems</div>
-                        <div class="build-card-desc">RAG pipelines, agentic workflows (LangGraph), semantic caching, multi-tenant LLM systems optimized for cost + latency.</div>
-                    </div>
-                    <div class="build-card">
-                        <div class="build-card-title">ML Engineering Systems</div>
-                        <div class="build-card-desc">Reproducible pipelines with MLflow + DVC, full experiment tracking, and end-to-end traceability.</div>
-                    </div>
-                    <div class="build-card">
-                        <div class="build-card-title">Data Engineering</div>
-                        <div class="build-card-desc">ETL/ELT pipelines, real-time APIs (FastAPI), vector databases (Qdrant), and data validation frameworks.</div>
-                    </div>
-                    <div class="build-card">
-                        <div class="build-card-title">Analytics &amp; Decision Systems</div>
-                        <div class="build-card-desc">SQL modeling, dashboards, and A/B testing frameworks that connect data to measurable outcomes.</div>
-                    </div>
-                    <div class="build-card">
-                        <div class="build-card-title">MLOps &amp; Cloud</div>
-                        <div class="build-card-desc">Azure, Databricks, Docker, Kubernetes, CI/CD, monitoring, and deployment automation.</div>
-                    </div>
-                </div>
-
-                <h2>🏗️ How I Work</h2>
-                <ul class="how-list">
-                    <li><strong>Research-driven rigor</strong>Clinical research background → hypothesis-first thinking</li>
-                    <li><strong>Business-first mindset</strong>Analytics background → metrics over models</li>
-                    <li><strong>Production-first engineering</strong>Systems built to scale, not demo</li>
-                    <li><strong>Clarity-first teaching</strong>100+ projects, 200+ students mentored</li>
-                </ul>
-
-                <h2>🧬 Background</h2>
-                <p style="font-size: 15px; line-height: 1.8; color: #555;">
-                    Web development → analytics → ML engineering → production AI systems.<br>
-                    I focus on building systems that move from notebooks to production with reliability, traceability, and measurable impact.
-                </p>
-
-                <h2>💬 Core Philosophy</h2>
+                <h2>Philosophy</h2>
                 <div class="philosophy-box">
-                    <p>I don't build models.</p>
-                    <p>I build systems that turn data into decisions — reliably, in production.</p>
+                    <p>I don't treat AI as magic. I treat it as engineering:</p>
+                    <p><strong>data → system → decision → impact</strong></p>
+                    <p>My goal is simple: build systems that are reliable, explainable, and useful in the real world — not just in notebooks.</p>
                 </div>
 
-                <h2>🤝 Let's Connect</h2>
-                <p style="font-size: 15px; color: #555; margin-bottom: 0.6rem;">Interested in:</p>
+                <h2>What I'm Looking For</h2>
+                <p class="body-text" style="margin-bottom: 0.4rem;">I enjoy working on:</p>
                 <ul class="interest-list">
                     <li>Production AI systems</li>
-                    <li>MLOps &amp; reproducible ML</li>
-                    <li>RAG / agentic AI architectures</li>
+                    <li>MLOps &amp; scalable ML pipelines</li>
+                    <li>RAG &amp; agent-based architectures</li>
                     <li>Data engineering at scale</li>
-                    <li>AI systems with real-world constraints</li>
+                    <li>Real-world applied AI problems</li>
                 </ul>
 
-                <div style="margin-top: 1.5rem; display: flex; gap: 12px; flex-wrap: wrap;">
+                <h2>Let's Connect</h2>
+                <div class="connect-box">
+                    If you're building something where <strong>correctness matters</strong>, systems need to <strong>scale</strong>, and AI must <strong>work in production</strong> — I'd love to connect.
+                </div>
+
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
                     <a href="/projects/" class="btn btn-primary"><i class="icon ion-md-folder"></i> Projects</a>
                     <a href="/experience/" class="btn btn-secondary"><i class="icon ion-md-briefcase"></i> Experience</a>
                     <a href="mailto:{{ site.email }}" class="btn btn-secondary"><i class="icon ion-md-mail"></i> Contact</a>
