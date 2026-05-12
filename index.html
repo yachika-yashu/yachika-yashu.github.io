@@ -40,8 +40,19 @@ custom_css: sidebar
         <!-- Main Content -->
         <div class="col col-12 col-t-9">
             <style>
-                .about-section h2 { color: #333; margin-top: 1.5rem; }
-                .about-section h3 { color: #f9a94e; margin-top: 1.2rem; }
+                .about-section h2 { color: #f58506; margin-top: 1.8rem; margin-bottom: 0.4rem; }
+                .about-section h3 { color: #f9a94e; margin-top: 1rem; margin-bottom: 0.2rem; font-size: 15px; font-weight: 600; }
+
+                .stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
+                .stat-card { background: #fff; border: 1px solid #ececec; border-top: 3px solid #f58506; border-radius: 6px; padding: 14px 10px; text-align: center; }
+                .stat-number { font-size: 26px; font-weight: 700; color: #f58506; line-height: 1.1; }
+                .stat-label { font-size: 11.5px; color: #666; margin-top: 5px; line-height: 1.4; }
+
+                .stack-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
+                .stack-category { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 12px 14px; }
+                .stack-label { font-size: 11px; font-weight: 700; color: #f58506; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 7px; }
+                .stack-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+                .stack-tag { font-size: 11px; background: #fff4e6; color: #b86e00; border-radius: 4px; padding: 2px 7px; }
             </style>
             <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
                 
@@ -130,26 +141,56 @@ custom_css: sidebar
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">Azure cloud architecture, Databricks workflows, Docker containerization, Kubernetes orchestration, CI/CD automation, load testing, production monitoring.</p>
 
                 <h2>By The Numbers</h2>
-                <ul style="font-size: 16px; line-height: 1.8; color: #555;">
-                    <li>6+ years building production ML systems across multiple industries</li>
-                    <li>95% reduction in LLM API costs through two-tier semantic caching</li>
-                    <li>25% conversion lift through A/B testing and data-driven optimization</li>
-                    <li>100+ research projects mentored with rigorous methodology</li>
-                    <li>200+ students trained per cohort in data science and analytics</li>
-                    <li>2 peer-reviewed publications in competitive venues (IEEE, Journal of Xidian University)</li>
-                    <li>50+ concurrent multi-tenant users load-tested and validated</li>
-                    <li>96% graduate placement rate from programs I designed</li>
-                </ul>
+                <div class="stats-grid">
+                    <div class="stat-card"><div class="stat-number">6+</div><div class="stat-label">years building production ML systems</div></div>
+                    <div class="stat-card"><div class="stat-number">95%</div><div class="stat-label">LLM API cost reduction via semantic caching</div></div>
+                    <div class="stat-card"><div class="stat-number">25%</div><div class="stat-label">conversion lift through A/B testing</div></div>
+                    <div class="stat-card"><div class="stat-number">100+</div><div class="stat-label">research projects mentored</div></div>
+                    <div class="stat-card"><div class="stat-number">200+</div><div class="stat-label">students trained per cohort</div></div>
+                    <div class="stat-card"><div class="stat-number">2</div><div class="stat-label">peer-reviewed publications (IEEE &amp; Xidian)</div></div>
+                    <div class="stat-card"><div class="stat-number">50+</div><div class="stat-label">concurrent users load-tested</div></div>
+                    <div class="stat-card"><div class="stat-number">96%</div><div class="stat-label">graduate placement rate</div></div>
+                </div>
 
                 <h2>Technical Stack</h2>
-                <ul style="font-size: 16px; line-height: 1.8; color: #555;">
-                    <li><strong>AI/ML:</strong> Transformers, LLMs, RAG, Agentic AI (LangGraph), NLP, Deep Learning, Prompt Engineering, Model Evaluation, Fine-tuning</li>
-                    <li><strong>MLOps &amp; DevOps:</strong> DVC, MLflow, Docker, Kubernetes, CI/CD, Git, Databricks, FastAPI, REST APIs</li>
-                    <li><strong>Cloud:</strong> Azure (ML Studio, Data Factory, Databricks), AWS (S3, EC2, SageMaker) â€” Microsoft Azure Fundamentals Certified</li>
-                    <li><strong>Data &amp; Engineering:</strong> Python (Pandas, NumPy, Scikit-learn), SQL (PostgreSQL, MySQL, MSSQL), ETL/ELT, Feature Engineering, Vector Databases (Qdrant), Redis, Data Validation &amp; Governance</li>
-                    <li><strong>Analytics &amp; BI:</strong> Power BI (DAX, KPI modeling), Tableau, Streamlit, Python visualization, D3.js</li>
-                    <li><strong>Research &amp; Communication:</strong> Statistical Inference, A/B Testing, Experimental Design, Academic Writing, Published Author</li>
-                </ul>
+                <div class=”stack-grid”>
+                    <div class=”stack-category”>
+                        <div class=”stack-label”>AI / ML</div>
+                        <div class=”stack-tags”>
+                            <span class=”stack-tag”>LLMs</span><span class=”stack-tag”>RAG</span><span class=”stack-tag”>LangGraph</span><span class=”stack-tag”>NLP</span><span class=”stack-tag”>Deep Learning</span><span class=”stack-tag”>Prompt Engineering</span><span class=”stack-tag”>Fine-tuning</span>
+                        </div>
+                    </div>
+                    <div class=”stack-category”>
+                        <div class=”stack-label”>MLOps &amp; DevOps</div>
+                        <div class=”stack-tags”>
+                            <span class=”stack-tag”>DVC</span><span class=”stack-tag”>MLflow</span><span class=”stack-tag”>Docker</span><span class=”stack-tag”>Kubernetes</span><span class=”stack-tag”>CI/CD</span><span class=”stack-tag”>FastAPI</span><span class=”stack-tag”>Databricks</span>
+                        </div>
+                    </div>
+                    <div class=”stack-category”>
+                        <div class=”stack-label”>Cloud</div>
+                        <div class=”stack-tags”>
+                            <span class=”stack-tag”>Azure</span><span class=”stack-tag”>AWS S3</span><span class=”stack-tag”>EC2</span><span class=”stack-tag”>SageMaker</span><span class=”stack-tag”>Azure ML Studio</span>
+                        </div>
+                    </div>
+                    <div class=”stack-category”>
+                        <div class=”stack-label”>Data &amp; Engineering</div>
+                        <div class=”stack-tags”>
+                            <span class=”stack-tag”>Python</span><span class=”stack-tag”>SQL</span><span class=”stack-tag”>PostgreSQL</span><span class=”stack-tag”>Redis</span><span class=”stack-tag”>Qdrant</span><span class=”stack-tag”>ETL/ELT</span><span class=”stack-tag”>Pandas</span><span class=”stack-tag”>NumPy</span>
+                        </div>
+                    </div>
+                    <div class=”stack-category”>
+                        <div class=”stack-label”>Analytics &amp; BI</div>
+                        <div class=”stack-tags”>
+                            <span class=”stack-tag”>Power BI</span><span class=”stack-tag”>Tableau</span><span class=”stack-tag”>Streamlit</span><span class=”stack-tag”>D3.js</span><span class=”stack-tag”>A/B Testing</span>
+                        </div>
+                    </div>
+                    <div class=”stack-category”>
+                        <div class=”stack-label”>Research</div>
+                        <div class=”stack-tags”>
+                            <span class=”stack-tag”>Statistical Inference</span><span class=”stack-tag”>Experimental Design</span><span class=”stack-tag”>Academic Writing</span><span class=”stack-tag”>IEEE Published</span>
+                        </div>
+                    </div>
+                </div>
 
                 <h2>Let's Connect</h2>
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">
@@ -160,7 +201,7 @@ custom_css: sidebar
                     <li>GitHub: <a href="https://github.com/yachika-yashu">github.com/yachika-yashu</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/yachikanand/">linkedin.com/in/yachikanand</a></li>
                     <li>Resume: <a href="https://yachika-yashu.github.io/docs/Yachika_Anand_Resume.pdf">Download Here</a> </li>
-                    <li>Email: <a href="yachikasharma25@gmail.com">Download Here</a> </li>
+                    <li>Email: <a href="mailto:yachikanand@gmail.com">Connect here</a> </li>
                 </ul>
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">
                     Let's talk about: Production RAG systems, reproducible MLOps, agentic AI workflows, how consistency compounds, building systems that teach, or why governance and data lineage matter.
