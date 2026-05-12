@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Yachika Anand
-description: "Hi I'm Yachika Anand, and I'm a Data Solutions Architect. I build practical AI systems, data pipelines, and analytics products that help teams make better decisions. My work sits at the intersection of machine learning, data engineering, cloud architecture, and product thinking—with a strong focus on reproducibility, governance, and real-world impact. With 6+ years of experience, I specialize in designing and delivering intelligent data products, RAG systems, and production ML workflows. I've shipped systems on Azure, Databricks, FastAPI, Power BI, and modern GenAI tooling. My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume)."
+description: "Hi I'm Yachika Anand, and I'm a Data Solutions Architect. I build practical AI systems, data pipelines, and analytics products that help teams make better decisions. My work sits at the intersection of machine learning, data engineering, cloud architecture, and product thinking—with a strong focus on reproducibility, governance, and real-world impact. With 6+ years of experience, I specialize in designing and delivering intelligent data products, RAG systems, and production ML workflows. My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume)."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
