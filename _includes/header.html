@@ -25,13 +25,14 @@
 						</a>
 						{% endif %}
 						<div class="menu-links" style="margin-top: 12px;">
-							<ul class="list-reset" style="display:flex; flex-direction:column; gap:6px; padding:0; margin:0;">
+							<ul class="list-reset" style="display:flex; flex-direction:column; align-items:flex-start; gap:6px; padding:0; margin:0;">
 								{% if site.email %}
-								<li class="item" style="display:flex; align-items:center; gap:5px;">
-									<a class="item-link" href="mailto:{{ site.email }}" title="{{ site.email }}" style="flex:1;"><i class="ion ion-md-mail"></i> Email</a>
-									<button id="copy-email-btn" onclick="copyEmail('{{ site.email }}')" title="Copy email address" style="background:none;border:1px solid #f58506;border-radius:4px;padding:1px 6px;cursor:pointer;font-size:11px;color:#f58506;line-height:1.6;">
-										<i class="ion ion-md-copy"></i>
-									</button>
+								<li style="list-style:none;">
+									<div style="display:inline-flex; align-items:center; border:1px solid #f58506; border-radius:20px; padding:4px 14px; gap:8px;">
+										<a href="mailto:{{ site.email }}" title="{{ site.email }}" style="color:#f58506; text-decoration:none; font-size:14px; white-space:nowrap;"><i class="ion ion-md-mail"></i> Email</a>
+										<span style="width:1px; height:13px; background:#f9a94e; display:inline-block; opacity:0.5;"></span>
+										<button id="copy-email-btn" onclick="copyEmail('{{ site.email }}')" title="Copy {{ site.email }}" style="background:none;border:none;cursor:pointer;color:#f58506;padding:0;font-size:13px;display:flex;align-items:center;"><i class="ion ion-md-copy"></i></button>
+									</div>
 								</li>
 								{% endif %}
 								{% if site.github %}<li class="item"><a class="item-link" href="{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
