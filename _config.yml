@@ -34,7 +34,7 @@ avatar_image: "img/profile_pic.png"
 # Contact links
 linkedln: "https://www.linkedin.com/in/yachikanand/" # Add your linkedln handle
 github: "https://github.com/yachika-yashu"  # Add your github handle
-Email: "yachikanand@gmail.com"
+email: "yachikanand@gmail.com"
 
 paginate: 6
 paginate_path: "/blog/page/:num"
