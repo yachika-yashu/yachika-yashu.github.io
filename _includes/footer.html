@@ -1,0 +1,27 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col col-12">
+                <div class="footer-top">
+                    <h2 class="logo-title">
+                        <a href="{{ "/" | relative_url }}" class="logo-text">{{ site.title }}</a>
+                    </h2>
+                    <div class="top"><i class="ion ion-ios-arrow-up"></i></div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <p>&copy; {{site.time | date: '%Y'}} {{ site.title }} Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <ul class="list-reset">
+                            {% if site.github %}<li><a href="{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
+                            {% if site.linkedin or site.linkedln %}<li><a href="{{ site.linkedin | default: site.linkedln }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
+                            {% if site.resume_url %}<li><a href="{{ site.resume_url | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-ios-document"></i> Resume</a></li>{% endif %}
+                            {% if site.email %}<li><a href="mailto:{{ site.email }}"><i class="ion ion-md-mail"></i> Email</a></li>{% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
