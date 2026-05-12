@@ -53,6 +53,11 @@ custom_css: sidebar
                 .stack-label { font-size: 11px; font-weight: 700; color: #f58506; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 7px; }
                 .stack-tags { display: flex; flex-wrap: wrap; gap: 4px; }
                 .stack-tag { font-size: 11px; background: #fff4e6; color: #b86e00; border-radius: 4px; padding: 2px 7px; }
+
+                .build-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
+                .build-card { background: #fff; border: 1px solid #ececec; border-left: 3px solid #f58506; border-radius: 6px; padding: 14px 16px; }
+                .build-card-title { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 6px; }
+                .build-card-desc { font-size: 13px; color: #666; line-height: 1.6; }
             </style>
             <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
                 
@@ -105,10 +110,10 @@ That mix shaped the way I build today. I care about clean data, measurable outco
 
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">
                     <strong>The Result:</strong> I build production AI systems that are rigorous, explainable, maintainable, and optimized for real impact not just accuracy metrics.
-                    Most teams treat ML like magic"”throw data in, hope something good comes out. That's broken. I've spent years building differently: pipelines where you can trace exactly how data flows, systems where reproducibility is architecture (not an afterthought), cultures where hypothesis rigor and A/B testing are standard.
+                    Most teams treat ML like magic — throw data in, hope something good comes out. That's broken. I've spent years building differently: pipelines where you can trace exactly how data flows, systems where reproducibility is architecture (not an afterthought), cultures where hypothesis rigor and A/B testing are standard.
                 </p>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">
-                    I'm especially drawn to work where AI meets practical constraints: reproducible MLOps, agentic RAG systems, semantic caching, data lineage, model evaluation, scalable deployment. I don't just want models that work in notebooks"”I want systems that are traceable, maintainable, and ready for real users.
+                <p style=”font-size: 16px; line-height: 1.8; color: #555;”>
+                    I'm especially drawn to work where AI meets practical constraints: reproducible MLOps, agentic RAG systems, semantic caching, data lineage, model evaluation, scalable deployment. I don't just want models that work in notebooks — I want systems that are traceable, maintainable, and ready for real users.
                 </p>
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">
                     I'm also a published researcher (IEEE, Journal of Xidian University) preparing for PhD-track opportunities. My research interests: agentic AI systems, sustainability in AI, deep learning architectures and explainability for medical systems.
@@ -125,20 +130,28 @@ That mix shaped the way I build today. I care about clean data, measurable outco
                 </p>
 
                 <h2>What I Build</h2>
-                <h3>Production AI Systems</h3>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">RAG architectures with LangGraph, agentic workflows, semantic caching strategies (95%+ API cost reduction), multi-tenant isolation, real-time streaming.</p>
-
-                <h3>Reproducible ML Pipelines</h3>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">DVC versioning, MLflow tracking, Git-based workflows, strict data lineage, experiment reproducibility on day 365 with one command.</p>
-
-                <h3>Data Engineering at Scale</h3>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">ETL/ELT pipelines, data validation, governance frameworks, feature engineering, vector databases (Qdrant), real-time integrations with FastAPI.</p>
-
-                <h3>Analytics &amp; BI Solutions</h3>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">Power BI dashboards, Python-based analytics, SQL data modeling, storytelling that drives decisions, A/B testing frameworks.</p>
-
-                <h3>Cloud-Native Applications</h3>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">Azure cloud architecture, Databricks workflows, Docker containerization, Kubernetes orchestration, CI/CD automation, load testing, production monitoring.</p>
+                <div class="build-grid">
+                    <div class="build-card">
+                        <div class="build-card-title">Production AI Systems</div>
+                        <div class="build-card-desc">RAG architectures with LangGraph, agentic workflows, semantic caching (95%+ API cost reduction), multi-tenant isolation, real-time streaming.</div>
+                    </div>
+                    <div class="build-card">
+                        <div class="build-card-title">Reproducible ML Pipelines</div>
+                        <div class="build-card-desc">DVC versioning, MLflow tracking, Git-based workflows, strict data lineage — reproducible on day 365 with one command.</div>
+                    </div>
+                    <div class="build-card">
+                        <div class="build-card-title">Data Engineering at Scale</div>
+                        <div class="build-card-desc">ETL/ELT pipelines, data validation, governance frameworks, vector databases (Qdrant), real-time integrations with FastAPI.</div>
+                    </div>
+                    <div class="build-card">
+                        <div class="build-card-title">Analytics &amp; BI</div>
+                        <div class="build-card-desc">Power BI dashboards, SQL data modeling, A/B testing frameworks, storytelling that drives decisions.</div>
+                    </div>
+                    <div class="build-card">
+                        <div class="build-card-title">Cloud-Native Applications</div>
+                        <div class="build-card-desc">Azure architecture, Databricks workflows, Docker &amp; Kubernetes, CI/CD automation, load testing, production monitoring.</div>
+                    </div>
+                </div>
 
                 <h2>By The Numbers</h2>
                 <div class="stats-grid">
@@ -154,20 +167,13 @@ That mix shaped the way I build today. I care about clean data, measurable outco
 
                 <h2>Let's Connect</h2>
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">
-                    I'm interested in problems where AI meets real constraints, where reproducibility is non-negotiable, and where impact is measurable.
-                    Explore my projects they're designed to show thinking, not just code.
-                </p>
-                <ul style="font-size: 16px; line-height: 1.8; color: #555;">
-                    <li>GitHub: <a href="https://github.com/yachika-yashu">github.com/yachika-yashu</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/yachikanand/">linkedin.com/in/yachikanand</a></li>
-                    <li>Resume: <a href="https://yachika-yashu.github.io/docs/Yachika_Anand_Resume.pdf">Download Here</a> </li>
-                    <li>Email: <a href="mailto:yachikanand@gmail.com">Connect here</a> </li>
-                </ul>
-                <p style="font-size: 16px; line-height: 1.8; color: #555;">
-                    Let's talk about: Production RAG systems, reproducible MLOps, agentic AI workflows, how consistency compounds, building systems that teach, or why governance and data lineage matter.
+                    I'm interested in problems where AI meets real constraints, where reproducibility is non-negotiable, and where impact is measurable. Explore my projects — they're designed to show thinking, not just code.
                 </p>
                 <p style="font-size: 16px; line-height: 1.8; color: #555;">
-                    And if you're starting in AI/ML and feeling overwhelmed? That's normal and it means you're ready. Show up every day. Learn one thing. Build one thing. The butterfly phase comes later. For now, the caterpillar phase is exactly where you need to be.
+                    Let's talk about: production RAG systems, reproducible MLOps, agentic AI workflows, how consistency compounds, or why governance and data lineage matter.
+                </p>
+                <p style="font-size: 16px; line-height: 1.8; color: #555;">
+                    And if you're starting in AI/ML and feeling overwhelmed? That's normal — and it means you're ready. Show up every day. Learn one thing. Build one thing. The butterfly phase comes later.
                 </p>
 
                 <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
