@@ -12,7 +12,7 @@
 						{% endif %}
 						<div class="menu-links" style="margin-top: 12px;">
 							<ul class="list-reset">
-								{% if site.location %}<li class="item"><a class="item-link"><i class="ion ion-ios-pin"></i> {{ site.location }}</a></li>{% endif %}
+								{% if site.email %}<li class="item"><a class="item-link"><i class="ion ion-ios-email"></i> {{ site.email }}</a></li>{% endif %}
 								{% if site.github %}<li class="item"><a class="item-link" href="{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
 								{% if site.linkedin or site.linkedln %}<li class="item"><a class="item-link" href="{{ site.linkedin | default: site.linkedln }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
 								{% if site.resume_url %}<li class="item"><a class="item-link" href="{{ site.resume_url | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-ios-document"></i> Resume</a></li>{% endif %}
