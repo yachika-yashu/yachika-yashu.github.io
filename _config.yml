@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Yachika Anand
-description: "Hi I'm Yachika Anand, and I'm a Data Solutions Architect. I build practical AI systems, data pipelines, and analytics products that help teams make better decisions. My work sits at the intersection of machine learning, data engineering, cloud architecture, and product thinking—with a strong focus on reproducibility, governance, and real-world impact. With 6+ years of experience, I specialize in designing and delivering intelligent data products, RAG systems, and production ML workflows. My portfolio focuses on interesting projects I've recently undertaken, with a strong emphasis on business impact. Please visit my Github & LinkedIn pages (or download my Resume)."
+description: "AI Engineer and Data Solutions Architect building production GenAI, RAG systems, and governed data platforms. I write on Medium and Substack about AI engineering, data pipelines, and lessons from building real systems. 6+ years across AI, data engineering, teaching, and applied ML."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -20,7 +20,7 @@ collections:
 
 #-------------------------------
 # About Section
-subtitle: Data Science <span style="color:#f58506"> Portfolio </span>
+subtitle: AI Engineer <span style="color:#f58506"> | GenAI, RAG & Writer </span>
 resume_url: "docs/Yachika_Anand_Resume.pdf"
 avatar_image: "img/profile_pic.png"
 

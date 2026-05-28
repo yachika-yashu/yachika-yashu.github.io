@@ -11,6 +11,7 @@ custom_css: sidebar
                 <div class="sidebar-section">
                     <h3 class="sidebar-title">Projects</h3>
                     <ul class="sidebar-list">
+                        <li><a href="/#featured-work"><i class="icon ion-md-star"></i> Featured Work</a></li>
                         <li><a href="/projects/"><i class="icon ion-md-folder"></i> All Projects</a></li>
                         <li><a href="/projects/#ai-projects"><i class="icon ion-md-flash"></i> AI Applications</a></li>
                         <li><a href="/projects/#data-projects"><i class="icon ion-md-cloud"></i> Data Engineering</a></li>
@@ -32,6 +33,8 @@ custom_css: sidebar
                         <li><a href="/" class="active"><i class="icon ion-md-person"></i> About Me</a></li>
                         <li><a href="/blog/"><i class="icon ion-md-paper"></i> Blog Posts</a></li>
                         <li><a href="/publications/"><i class="icon ion-md-book"></i> Publications</a></li>
+                        <li><a href="https://medium.com/@yachikanand" target="_blank" rel="noopener noreferrer"><i class="icon ion-logo-medium"></i> Medium</a></li>
+                        <li><a href="https://substack.com/@yachikaanand" target="_blank" rel="noopener noreferrer"><i class="icon ion-md-mail-open"></i> Substack</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,9 +47,30 @@ custom_css: sidebar
 
                 .body-text { font-size: 16px; line-height: 1.8; color: #555; margin-bottom: 0.8rem; }
 
+                .intro-panel { background: #fff; border: 1px solid #ececec; border-left: 4px solid #f58506; border-radius: 6px; padding: 18px 20px; margin-bottom: 1.4rem; }
+                .intro-label { color: #f58506; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+                .intro-title { color: #222; font-size: 24px; line-height: 1.25; font-weight: 700; margin: 0 0 8px; }
+                .intro-copy { color: #555; font-size: 16px; line-height: 1.75; margin: 0; }
+
+                .proof-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 10px; margin: 1rem 0 1.5rem; }
+                .proof-item { background: #fff4e6; border: 1px solid #f8d9ad; border-radius: 6px; padding: 10px 12px; }
+                .proof-value { color: #333; font-size: 15px; font-weight: 700; line-height: 1.3; }
+                .proof-label { color: #7a5a2b; font-size: 12px; line-height: 1.4; margin-top: 3px; }
+
+                .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 1rem 0 1.5rem; }
+                .featured-card { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 16px; border-top: 3px solid #f58506; }
+                .featured-card h3 { font-size: 17px; line-height: 1.35; margin: 0 0 8px; color: #333; }
+                .featured-card h3 a { color: #333; text-decoration: none; }
+                .featured-card h3 a:hover { color: #f58506; }
+                .featured-card p { color: #555; font-size: 14px; line-height: 1.65; margin: 0 0 12px; }
+                .featured-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+                .featured-tech span { background: #f3f3f3; color: #444; border-radius: 4px; padding: 3px 8px; font-size: 11px; }
+                .featured-link { color: #f58506; font-size: 13px; font-weight: 700; }
+                .featured-link:hover { color: #d4730a; }
+
                 .mini-list { list-style: none; padding: 0; margin: 0.5rem 0 1rem 1rem; }
                 .mini-list li { font-size: 15px; color: #555; padding: 3px 0; }
-                .mini-list li::before { content: "—"; color: #f58506; margin-right: 8px; }
+                .mini-list li::before { content: "-"; color: #f58506; margin-right: 8px; }
 
                 .lesson-list { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
                 .lesson-list li { font-size: 15px; color: #555; padding: 7px 0 7px 14px; border-left: 2px solid #f9a94e; margin-bottom: 6px; line-height: 1.6; }
@@ -71,6 +95,18 @@ custom_css: sidebar
                 .connect-box { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 16px 20px; margin: 1rem 0 1.5rem; font-size: 15px; color: #555; line-height: 1.9; }
                 .connect-box strong { color: #333; }
 
+                .writing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 1rem 0 1.5rem; }
+                .writing-card { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+                .writing-card-header { display: flex; align-items: center; gap: 10px; }
+                .writing-platform-badge { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 9px; border-radius: 4px; }
+                .writing-platform-badge.medium { background: #000; color: #fff; }
+                .writing-platform-badge.substack { background: #f58506; color: #fff; }
+                .writing-card p { color: #555; font-size: 14px; line-height: 1.65; margin: 0; flex: 1; }
+                .writing-topics { display: flex; flex-wrap: wrap; gap: 6px; }
+                .writing-topics span { background: #f3f3f3; color: #444; border-radius: 4px; padding: 3px 8px; font-size: 11px; }
+                .writing-card-link { color: #f58506; font-size: 13px; font-weight: 700; text-decoration: none; }
+                .writing-card-link:hover { color: #d4730a; }
+
                 .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin: 1.2rem 0 0; max-width: 430px; }
                 .qr-card { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 14px; text-align: center; }
                 .qr-card img { width: 116px; height: 116px; object-fit: contain; display: block; margin: 0 auto 10px; }
@@ -79,9 +115,51 @@ custom_css: sidebar
                 .qr-link:hover { color: #d4730a; }
             </style>
             <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
+                <div class="intro-panel">
+                    <div class="intro-label">Production AI and Data Systems</div>
+                    <div class="intro-title">I build GenAI, RAG, and governed data platforms that can be evaluated, deployed, and trusted.</div>
+                    <p class="intro-copy">My work combines AI engineering, data architecture, analytics, teaching, and writing. I care about systems that move beyond demos: clear retrieval design, measurable quality, secure data flows, observable behavior, and business outcomes people can act on.</p>
+                </div>
+
+                <div class="proof-strip" aria-label="Professional proof points">
+                    <div class="proof-item"><div class="proof-value">6+ years</div><div class="proof-label">data, AI, analytics, and teaching</div></div>
+                    <div class="proof-item"><div class="proof-value">GenAI/RAG</div><div class="proof-label">LangGraph, LangChain, vector search</div></div>
+                    <div class="proof-item"><div class="proof-value">Azure + Databricks</div><div class="proof-label">cloud data and lakehouse platforms</div></div>
+                    <div class="proof-item"><div class="proof-value">200+ learners</div><div class="proof-label">trained in analytics and BI</div></div>
+                    <div class="proof-item"><div class="proof-value">Medium + Substack</div><div class="proof-label">writing on AI, RAG & data systems</div></div>
+                </div>
+
+                <h2 id="featured-work">Featured Work</h2>
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <h3><a href="{{ '/projects/MedVault-RAG/' | relative_url }}">MedVault-RAG</a></h3>
+                        <p>Healthcare-focused agentic RAG platform with hybrid search, citations, PubMed ingestion, streaming UI, and tenant isolation.</p>
+                        <div class="featured-tech"><span>LangGraph</span><span>Qdrant</span><span>FastAPI</span><span>Healthcare AI</span></div>
+                        <a class="featured-link" href="{{ '/projects/MedVault-RAG/' | relative_url }}">View project</a>
+                    </div>
+                    <div class="featured-card">
+                        <h3><a href="{{ '/projects/research-hub/' | relative_url }}">ResearchHub</a></h3>
+                        <p>Self-hosted AI research assistant with paper chat, literature reviews, paper comparison, BibTeX export, Arxiv monitoring, and usage tracking.</p>
+                        <div class="featured-tech"><span>RAG</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span></div>
+                        <a class="featured-link" href="{{ '/projects/research-hub/' | relative_url }}">View project</a>
+                    </div>
+                    <div class="featured-card">
+                        <h3><a href="{{ '/projects/production-ai-performance-benchmarking-toolkit/' | relative_url }}">AI Benchmarking Toolkit</a></h3>
+                        <p>Evaluation framework for production AI systems covering latency, RAG quality, retrieval, cost, regression testing, and observability.</p>
+                        <div class="featured-tech"><span>RAGAS</span><span>LangSmith</span><span>Benchmarking</span><span>MLOps</span></div>
+                        <a class="featured-link" href="{{ '/projects/production-ai-performance-benchmarking-toolkit/' | relative_url }}">View project</a>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 1.3rem;">
+                    <a href="/projects/" class="btn btn-primary"><i class="icon ion-md-folder"></i> View All Projects</a>
+                    <a href="{{ site.resume_url | relative_url }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="icon ion-ios-document"></i> Download Resume</a>
+                    <a href="mailto:{{ site.email }}" class="btn btn-secondary"><i class="icon ion-md-mail"></i> Contact</a>
+                </div>
+
                 <h2>My Journey</h2>
-                <p class="body-text">Before AI/ML, I explored multiple roles — graphic &amp; marketing designer, web developer, clinical researcher, data analyst, engineer, and teacher. Each role shaped how I think today: I care about clean data, structured thinking, and systems that actually work in the real world.</p>
-                <p class="body-text">Three years ago, I transitioned from web development into data science and AI. At first, it felt overwhelming — too many tools, too many opinions, too much noise.</p>
+                <p class="body-text">Before AI/ML, I explored multiple roles: graphic and marketing designer, web developer, clinical researcher, data analyst, engineer, and teacher. Each role shaped how I think today: I care about clean data, structured thinking, and systems that actually work in the real world.</p>
+                <p class="body-text">Three years ago, I transitioned from web development into data science and AI. At first, it felt overwhelming: too many tools, too many opinions, too much noise.</p>
                 <p class="body-text">What worked for me was simple: <strong>consistency over intensity.</strong></p>
                 <p class="body-text" style="margin-bottom: 0.3rem;">I stopped trying to learn everything and focused on one thing at a time:</p>
                 <ul class="mini-list">
@@ -112,6 +190,31 @@ custom_css: sidebar
                 </ul>
                 <p class="body-text">I care about one thing: <strong>Can this system survive in production and be trusted?</strong></p>
 
+                <h2>Writing</h2>
+                <p class="body-text">I write about production AI, RAG systems, data engineering, and lessons from building real systems. If you're going through a similar transition or want to see how I think through problems, these are good places to start.</p>
+                <div class="writing-grid">
+                    <div class="writing-card">
+                        <div class="writing-card-header">
+                            <span class="writing-platform-badge medium">Medium</span>
+                        </div>
+                        <p>Deep dives on AI engineering, RAG design patterns, data pipelines, and applied ML — written for practitioners who want to move from experiments to production.</p>
+                        <div class="writing-topics">
+                            <span>RAG Systems</span><span>LLM Engineering</span><span>Data Pipelines</span><span>MLOps</span>
+                        </div>
+                        <a class="writing-card-link" href="https://medium.com/@yachikanand" target="_blank" rel="noopener noreferrer">Read on Medium &rarr;</a>
+                    </div>
+                    <div class="writing-card">
+                        <div class="writing-card-header">
+                            <span class="writing-platform-badge substack">Substack</span>
+                        </div>
+                        <p>Practical insights on building AI systems, career transitions into data science, and the mindset behind going from chaos to clarity in a fast-moving field.</p>
+                        <div class="writing-topics">
+                            <span>AI Systems</span><span>Career</span><span>Consistency</span><span>Lessons Learned</span>
+                        </div>
+                        <a class="writing-card-link" href="https://substack.com/@yachikaanand" target="_blank" rel="noopener noreferrer">Read on Substack &rarr;</a>
+                    </div>
+                </div>
+
                 <h2>Impact</h2>
                 <div class="stats-grid">
                     <div class="stat-card"><div class="stat-number">6+</div><div class="stat-label">years working with data &amp; AI systems</div></div>
@@ -126,8 +229,8 @@ custom_css: sidebar
                 <h2>Philosophy</h2>
                 <div class="philosophy-box">
                     <p>I don't treat AI as magic. I treat it as engineering:</p>
-                    <p><strong>data → system → decision → impact</strong></p>
-                    <p>My goal is simple: build systems that are reliable, explainable, and useful in the real world — not just in notebooks.</p>
+                    <p><strong>data -> system -> decision -> impact</strong></p>
+                    <p>My goal is simple: build systems that are reliable, explainable, and useful in the real world - not just in notebooks.</p>
                 </div>
 
                 <h2>What I'm Looking For</h2>
@@ -138,17 +241,18 @@ custom_css: sidebar
                     <li>RAG &amp; agent-based architectures</li>
                     <li>Data engineering at scale</li>
                     <li>Real-world applied AI problems</li>
-                    
                 </ul>
 
                 <h2>Let's Connect</h2>
                 <div class="connect-box">
-                    If you're building something where <strong>correctness matters</strong>, systems need to <strong>scale</strong>, and AI must <strong>work in production</strong> — I'd love to connect.
+                    If you're building something where <strong>correctness matters</strong>, systems need to <strong>scale</strong>, and AI must <strong>work in production</strong>, I'd love to connect.
                 </div>
 
                 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
                     <a href="/projects/" class="btn btn-primary"><i class="icon ion-md-folder"></i> Projects</a>
                     <a href="/experience/" class="btn btn-secondary"><i class="icon ion-md-briefcase"></i> Experience</a>
+                    <a href="https://medium.com/@yachikanand" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="icon ion-logo-medium"></i> Medium</a>
+                    <a href="https://substack.com/@yachikaanand" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="icon ion-md-mail-open"></i> Substack</a>
                     <a href="mailto:{{ site.email }}" class="btn btn-secondary"><i class="icon ion-md-mail"></i> Contact</a>
                 </div>
 
