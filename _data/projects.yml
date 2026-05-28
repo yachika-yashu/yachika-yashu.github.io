@@ -1,33 +1,71 @@
-- title: "Book Recommender System"
-  category: "ML"
-  description: "Built a production-grade book recommendation engine that bridges the gap between exploratory data science and real-world application deployment. The project solves the problem of 'information overload' in digital libraries by providing users with two distinct recommendation strategies: a popularity-based discovery engine for trending titles and a personalized collaborative filtering engine for niche discoveries."
-  technologies: ["Python","FastAPI","Pandas","Numpy", "Scikit-learn", "Streamlit"]
-  date: "2025-10"
-  link: "/projects/book-recommender-system/"
-  github_link: "https://github.com/yachika-yashu/book-recommender-system"
-
-- title: "Emotion Detection MLOps Pipeline"
-  category: "MLOps"
-  description: "Built a robust, reproducible Machine Learning pipeline for Emotion Detection using DVC, ensuring strict version control of datasets, models, and code."
-  technologies: ["Python", "DVC", "Scikit-learn", "NLTK", "Pandas"]
-  date: "2026-04"
-  link: "/projects/emotion-detection-mlops/"
-  github_link: "https://github.com/yachika-yashu/emotion_detection_MLOps_pipeline"
-
-
-
 - title: "MedVault-RAG"
   category: "AI"
-  description: "Built a full-stack, production-ready AI research platform for healthcare teams that transforms a static PDF library into a conversational knowledge base. Features a multi-stage agentic RAG pipeline with hybrid search, cross-encoder reranking, LangGraph agent with self-correction, real-time SSE streaming, multi-tenant data isolation, and a Smart Research mode that auto-ingests PubMed papers and answers clinical questions in under 60 seconds."
+  description: "Built a healthcare-focused AI research platform that turns static PDFs into a cited conversational knowledge base. The system combines hybrid search, cross-encoder reranking, a LangGraph agent, PubMed auto-ingestion, SSE streaming, tenant isolation, caching, and observability for clinical research workflows."
   technologies: ["Python", "FastAPI", "LangGraph", "Qdrant", "Redis", "PostgreSQL", "Docling", "OpenAI", "Streamlit", "Docker", "Nginx", "LangSmith", "RAG"]
   date: "2026-05"
   link: "/projects/MedVault-RAG/"
   github_link: "https://github.com/yachika-yashu/MedVault"
 
-- title: "Collaborative Research Intelligence Platform"
+- title: "ResearchHub"
   category: "AI"
-  description: "Developed a collaborative Research Intelligence Platform to streamline and enhance the research workflow for data scientists. Built a robust, containerized architecture that supports team-based document ingestion, intelligent semantic search, and AI-driven question-answering capabilities."
-  technologies: ["FastAPI","Streamlit","LangGraph","LLMs","Vector DB","Docker","Kubernetes", "PostgreSQL", "Redis", "RAG", "JWT", "AI","Langchain","Qdrant"]
-  date: "2026-04"
+  description: "Built a self-hosted AI research assistant for academics and engineers with multi-paper chat, hybrid dense + BM25 retrieval, bulk PDF ingestion, structured paper extraction, literature reviews, paper comparison, knowledge graphs, BibTeX export, Arxiv monitoring, notes, cost tracking, and team-based multi-tenancy."
+  technologies: ["FastAPI", "LangGraph", "LangChain", "Qdrant", "Redis", "PostgreSQL", "Streamlit", "Docker", "arq", "Docling", "OpenAI", "CI/CD"]
+  date: "2026-05"
   link: "/projects/research-hub/"
   github_link: "https://github.com/yachika-yashu/Research-hub"
+
+- title: "Production AI Performance Benchmarking Toolkit"
+  category: "AI"
+  description: "Created a practical benchmarking framework for production AI systems covering quality, speed, cost, baseline evaluation, latency profiling, RAGAS quality scoring, retrieval benchmarking, prompt A/B testing, cost analysis, load testing, regression testing, and observability."
+  technologies: ["Python", "LangSmith", "RAGAS", "LangChain", "OpenAI", "Pandas", "FAISS", "BM25", "Prometheus", "Evidently AI", "Benchmarking"]
+  date: "2026-05"
+  link: "/projects/production-ai-performance-benchmarking-toolkit/"
+  github_link: "https://github.com/yachika-yashu/production-ai-performance-benchmarking-toolkit"
+
+- title: "ClinETL Pipeline"
+  category: "Data Engineering"
+  description: "Designed a production-grade clinical trial monitoring pipeline for 500+ patients across 10 hospital sites. The system streams wearable and lab data through Kafka and Spark, validates clinical quality rules, writes to Delta Lake and PostgreSQL, detects anomalies and drift, predicts adverse events, and supports audit logging and real-time alerts."
+  technologies: ["Kafka", "Spark Structured Streaming", "Delta Lake", "PostgreSQL", "Great Expectations", "XGBoost", "Evidently AI", "FastAPI", "Streamlit", "Docker", "Airflow", "HIPAA", "CDISC SDTM"]
+  date: "2026-05"
+  link: "/projects/clinetl-pipeline/"
+  github_link: "https://github.com/yachika-yashu/ClinETL-Pipeline"
+
+- title: "Databricks Retail Lakehouse"
+  category: "Data Engineering"
+  description: "Implemented a Databricks medallion architecture for a global retail analytics pipeline. The project organizes customer, product, and transaction data into Bronze, Silver, and Gold Delta tables with validation, incremental merges, business aggregates, Power BI-ready outputs, and documented governance patterns."
+  technologies: ["Databricks", "Apache Spark", "PySpark", "SQL", "Delta Lake", "Medallion Architecture", "Power BI", "Data Quality", "Lakehouse"]
+  date: "2026-05"
+  link: "/projects/databricks-retail-lakehouse/"
+  github_link: "https://github.com/yachika-yashu/databricks-retail-lakehouse"
+
+- title: "Cybersecurity Product Experimentation & Retention Analytics"
+  category: "ML"
+  description: "Built an end-to-end product analytics workflow for a cybersecurity subscription product using synthetic telemetry. The project analyzes funnels, onboarding drop-offs, retention, subscription conversion, A/B test impact, causal feature adoption effects, churn risk, and stakeholder-ready business recommendations."
+  technologies: ["Python", "SQL", "Pandas", "Scikit-learn", "Statsmodels", "Power BI", "A/B Testing", "Causal Inference", "Churn Modeling"]
+  date: "2026-05"
+  link: "/projects/cybersecurity-product-experimentation/"
+  github_link: "https://github.com/yachika-yashu/experimentation-causal-inference-retention-cybersecurity-product"
+
+- title: "Online Purchase Orders Risk Classification"
+  category: "ML"
+  description: "Built a supervised ML workflow to predict default-payment risk for online purchase orders. The project uses domain-aware data cleaning, feature engineering from payment and order history fields, leakage-safe preprocessing with ColumnTransformer pipelines, model comparison, GridSearchCV tuning, and XGBoost selection based on ROC-AUC."
+  technologies: ["Python", "Pandas", "Scikit-learn", "XGBoost", "GridSearchCV", "ColumnTransformer", "Joblib", "Parquet", "Risk Modeling"]
+  date: "2026-05"
+  link: "/projects/online-purchase-orders-classification/"
+  github_link: "https://github.com/yachika-yashu/Online-Purchase-Orders-Classification"
+
+- title: "Emotion Detection MLOps Pipeline"
+  category: "ML"
+  description: "Built a reproducible NLP classification pipeline for emotion detection using DVC and a modular data science structure. The workflow separates ingestion, preprocessing, feature engineering, model training, and evaluation so datasets, parameters, code, and model artifacts can be versioned and reproduced."
+  technologies: ["Python", "DVC", "Scikit-learn", "NLTK", "Pandas", "TF-IDF", "Gradient Boosting", "MLOps"]
+  date: "2026-04"
+  link: "/projects/emotion-detection-mlops/"
+  github_link: "https://github.com/yachika-yashu/emotion_detection_MLOps_pipeline"
+
+- title: "Book Recommender System"
+  category: "ML"
+  description: "Built a book recommendation engine that combines popularity-based discovery with collaborative filtering. The project processes the Book-Crossing dataset, reduces matrix sparsity, trains item-based similarity recommendations, and serves results through a FastAPI-backed web interface."
+  technologies: ["Python", "FastAPI", "Pandas", "NumPy", "Scikit-learn", "Streamlit", "Collaborative Filtering"]
+  date: "2025-10"
+  link: "/projects/book-recommender-system/"
+  github_link: "https://github.com/yachika-yashu/book-recommender-system"
