@@ -1,55 +1,45 @@
-- title: "Data Solutions Architect"
+- title: "Data Solutions Architect & AI Lead"
   company: "No Worker Left Behind"
   duration: "January 2026 - Present"
   highlights:
-    - "Designed and implemented end-to-end data solutions, including automated yearly reporting dashboards in Power BI for business intelligence and performance analytics."
-    - "Leading the creation of an AI/ML-powered RAG chatbot integrated into the website, leveraging natural language processing to identify resume gaps, recommend skill enhancements, and provide personalized career insights."
-    - "Developed website data retrieval pipelines to enable real-time data access and integration across platforms."
+    - "Lead Azure AI and data platform delivery across GenAI/RAG systems, governed data pipelines, and executive reporting, translating stakeholder requirements into technical architecture and delivery plans."
+    - "Build RAG and agentic workflow patterns using LangChain, LangGraph, Azure OpenAI, governed enterprise knowledge sources, retrieval design, prompt controls, and evaluation criteria."
+    - "Delivered an Azure data pipeline with automated validation, lineage, and governance checkpoints to produce analytics-ready datasets for reporting, dashboards, and downstream AI consumption."
+    - "Launched an executive Power BI reporting suite with automated refresh, DAX KPI models, and data quality rules, reducing manual reporting effort and improving stakeholder confidence."
+    - "Established practical AI delivery controls including access controls, prompt documentation, evaluation metrics, responsible AI notes, and observable implementation practices."
 
-- title: "Professor (Data analytics)"
-  company: "Conestoga College "
-  duration: "2024 January - 2025 April"
+- title: "Professor | Data Analytics, ML & BI"
+  company: "Conestoga College"
+  duration: "January 2023 - April 2025"
   highlights:
-    - "Trained 330+ students in Web content management systems, including WordPress and D3.js (Data-
-Driven Documents), focusing on data analytics and visualization techniques."
-    - "Delivered lectures, led discussions, and conducted assessments with an emphasis on applying data
-analysis and visualization to real-world projects."
-    - "Mentored students in implementing D3.js for creating interactive, data-driven charts and graphs for
-client-facing applications."
-    - "Employed innovative teaching methodologies to engage students in both the theoretical and practical
-aspects of data visualization."
-    - "Gained experience teaching students from diverse backgrounds using a Learning Management System (LMS), ensuring effective learning outcomes."
+    - "Guided 100+ capstone teams through ML, analytics, and data-product lifecycles, coaching on problem framing, data validation, feature engineering, model evaluation, deployment concepts, and stakeholder communication."
+    - "Reviewed ML and analytics projects for metric integrity, data leakage risk, validation design, interpretability, reproducibility, responsible use, and business relevance."
+    - "Designed applied labs in Python, SQL, Power BI, D3.js, ETL workflows, cloud analytics, statistics, machine learning, and business intelligence for 200+ learners annually."
+    - "Mentored learners on turning raw data into model-ready datasets, dashboards, experiments, and stakeholder-ready technical narratives."
 
 - title: "Analyst & Web Developer"
   company: "IEC Hamilton"
-  duration: "2023 August - 2024 April"
-
+  duration: "August 2023 - April 2024"
   highlights:
-    - "Analyzed user engagement metrics and content performance across company blogs, social media, and the website, leading to a 40% increase in user interaction."
-    - "Developed data-driven social media strategies by tracking key performance indicators (KPIs), resulting in a 50% growth in followers across platforms."
-    - "Conducted in-depth market research and audience segmentation using surveys, A/B testing, and data analytics tools to optimize content and marketing strategies."
-    - "Collaborated with marketing teams to integrate insights from data analysis into broader campaigns,enhancing overall performance."
-    - "Translated complex data insights into visually compelling reports and dashboards, supporting business decision-making and strategy development."
+    - "Built a Power BI analytics dashboard integrating multi-source marketing data, DAX measures, KPI definitions, and validation controls to improve decision visibility."
+    - "Conducted A/B testing, funnel analysis, and statistical evaluation that supported a 25% conversion-rate increase through evidence-based improvements."
+    - "Analyzed user engagement, content performance, and campaign metrics across blogs, social media, and the website to guide data-driven marketing decisions."
+    - "Translated analytics findings into clear reports and dashboards for stakeholders, supporting campaign optimization and business strategy."
 
-- title: "Professor- Data Analytics"
-  company: "ANOVUS INSTITUTE OF CLINICAL RESEARCH"
-  duration: "2019 - 2022"
+- title: "Professor - Data Analytics & Clinical Research"
+  company: "Anovus Institute of Clinical Research"
+  duration: "October 2019 - December 2022"
   highlights:
-    - "Instructed clinical research students on leveraging Python, SAS for statistical analysis and Excel for data
-visualization, enhancing their data interpretation skills."
-    - "Help Collect, clean, analyze and visualize data to solve data driven problems"
-    - "Developed and delivered comprehensive lectures and hands-on workshops on data manipulation and statistical analysis"
-    - "Created and graded assignments, projects, and exams to assess student understanding and progress."
-    - "Provided mentorship and support to students, helping them to develop practical skills in data analytics. " 
+    - "Applied statistical analysis, data governance, validation, and reproducibility practices in a regulated clinical research environment using SAS, Excel, and Python."
+    - "Developed workshops on data manipulation, model-ready datasets, audit-ready documentation, regulatory data practices, and quality controls aligned with clinical research standards."
+    - "Created and graded applied assignments, projects, and assessments to strengthen students' practical analytics, interpretation, and reporting skills."
+    - "Mentored students on clinical data analysis workflows, emphasizing clean data, traceable methods, and reproducible analytical outputs."
 
-- title: "Data analytics Trainer JSD"
-  company: "Sai institute of skill development"
+- title: "Data Analysis Trainer"
+  company: "Sai Institute of Skill Development"
   duration: "2018 - 2019"
   highlights:
-    - "Provided training to 120+ trainees in various computer courses like Microsoft Office, HTML,CSS, WordPress, C, C++"
-    - "Prepared trainees for interviews and guided for job application"
-    - "Maintained existing computer programs by making minor modifications"
-    - "Supervised the JSD exams held at the Institution by the National Skill Development Corporation"
-    - "Improved trainee's placement percentage to 100%"
-
-
+    - "Delivered hands-on SQL, Python, Excel, web, and computer-skills training to 120+ learners using project-based exercises based on real business datasets."
+    - "Prepared trainees for interviews, job applications, and practical workplace scenarios through applied assignments and guided practice."
+    - "Supported a 96% graduate placement rate by combining technical instruction with employability coaching."
+    - "Coordinated JSD exam preparation and supervised assessment activities for National Skill Development Corporation-aligned programs."

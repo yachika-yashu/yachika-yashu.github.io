@@ -70,6 +70,13 @@ custom_css: sidebar
 
                 .connect-box { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 16px 20px; margin: 1rem 0 1.5rem; font-size: 15px; color: #555; line-height: 1.9; }
                 .connect-box strong { color: #333; }
+
+                .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin: 1.2rem 0 0; max-width: 430px; }
+                .qr-card { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 14px; text-align: center; }
+                .qr-card img { width: 116px; height: 116px; object-fit: contain; display: block; margin: 0 auto 10px; }
+                .qr-title { font-size: 14px; font-weight: 700; color: #333; margin-bottom: 3px; }
+                .qr-link { font-size: 13px; color: #f58506; }
+                .qr-link:hover { color: #d4730a; }
             </style>
             <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
                 <h2>My Journey</h2>
@@ -143,6 +150,19 @@ custom_css: sidebar
                     <a href="/projects/" class="btn btn-primary"><i class="icon ion-md-folder"></i> Projects</a>
                     <a href="/experience/" class="btn btn-secondary"><i class="icon ion-md-briefcase"></i> Experience</a>
                     <a href="mailto:{{ site.email }}" class="btn btn-secondary"><i class="icon ion-md-mail"></i> Contact</a>
+                </div>
+
+                <div class="qr-grid" aria-label="QR code links">
+                    <div class="qr-card">
+                        <img src="{{ '/Yachika_Anand_contact_card_QR.png' | relative_url }}" alt="QR code for Yachika Anand contact card">
+                        <div class="qr-title">Contact Card</div>
+                        <a class="qr-link" href="{{ '/Yachika_Anand_contact_card_QR.png' | relative_url }}" target="_blank" rel="noopener noreferrer">Open QR</a>
+                    </div>
+                    <div class="qr-card">
+                        <img src="{{ '/Yachika_Anand_portfolio_QR.png' | relative_url }}" alt="QR code for Yachika Anand portfolio">
+                        <div class="qr-title">Portfolio</div>
+                        <a class="qr-link" href="{{ '/' | relative_url }}" target="_blank" rel="noopener noreferrer">Open portfolio</a>
+                    </div>
                 </div>
 
             </div>
