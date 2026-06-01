@@ -6,6 +6,14 @@ categories: projects
 permalink: /projects/research-hub/
 ---
 
+<div style="background:#FFFDF8;border:1px solid #ececec;border-left:4px solid #f58506;border-radius:6px;padding:16px 20px;margin:0 0 1.5rem;">
+  <div style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;color:#f58506;margin-bottom:6px;">Project Demo</div>
+  <p style="margin:0 0 12px;color:#555;line-height:1.6;">Watch a walkthrough of ResearchHub — paper chat, hybrid retrieval, literature reviews, and the research workflows in action.</p>
+  <div style="position:relative;width:100%;padding-bottom:56.25%;height:0;border-radius:6px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/pc9u-_JEkc8" title="ResearchHub demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
+
 ## Overview
 
 ResearchHub is a production-grade, self-hosted AI research assistant for academics, engineers, and research teams. It helps users upload papers, chat with their document vault, run literature reviews, compare papers, monitor Arxiv, export BibTeX, and track notes and usage in one workspace.
@@ -106,4 +114,5 @@ The repo includes Docker Compose, production Compose, Caddy HTTPS configuration,
 
 ## Links
 
+- **Demo:** [Watch on YouTube](https://youtu.be/pc9u-_JEkc8)
 - **GitHub:** [github.com/yachika-yashu/Research-hub](https://github.com/yachika-yashu/Research-hub)

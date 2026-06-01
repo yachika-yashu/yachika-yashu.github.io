@@ -58,6 +58,8 @@ custom_css: sidebar
                 .featured-card h3 a { color: #333; text-decoration: none; }
                 .featured-card h3 a:hover { color: #f58506; }
                 .featured-card p { color: #555; font-size: 14px; line-height: 1.65; margin: 0 0 12px; }
+                .featured-embed { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; border-radius: 6px; overflow: hidden; margin: 0 0 12px; background: #000; }
+                .featured-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
                 .featured-tech { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
                 .featured-tech span { background: #f3f3f3; color: #444; border-radius: 4px; padding: 3px 8px; font-size: 11px; }
                 .featured-link { color: #f58506; font-size: 13px; font-weight: 700; }
@@ -124,8 +126,12 @@ custom_css: sidebar
                     <div class="featured-card">
                         <h3><a href="{{ '/projects/research-hub/' | relative_url }}">ResearchHub</a></h3>
                         <p>Self-hosted AI research assistant with paper chat, literature reviews, paper comparison, BibTeX export, Arxiv monitoring, and usage tracking.</p>
+                        <div class="featured-embed">
+                            <iframe src="https://www.youtube.com/embed/pc9u-_JEkc8" title="ResearchHub demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                         <div class="featured-tech"><span>RAG</span><span>Redis</span><span>PostgreSQL</span><span>Docker</span></div>
                         <a class="featured-link" href="{{ '/projects/research-hub/' | relative_url }}">View project</a>
+                        <a class="featured-link" href="https://youtu.be/pc9u-_JEkc8" target="_blank" rel="noopener noreferrer" style="margin-left: 14px;">Watch demo</a>
                     </div>
                     <div class="featured-card">
                         <h3><a href="{{ '/projects/production-ai-performance-benchmarking-toolkit/' | relative_url }}">AI Benchmarking Toolkit</a></h3>
@@ -143,7 +149,7 @@ custom_css: sidebar
 
                 <h2>My Journey</h2>
                 <p class="body-text">Before AI/ML, I explored multiple roles: graphic and marketing designer, web developer, clinical researcher, data analyst, engineer, and teacher. Each role shaped how I think today: I care about clean data, structured thinking, and systems that actually work in the real world.</p>
-                <p class="body-text">Three years ago, I transitioned from web development into data science and AI. At first, it felt overwhelming: too many tools, too many opinions, too much noise.</p>
+                <p class="body-text">Three years ago, I transitioned from Software development into data science and AI. At first, it felt overwhelming: too many tools, too many opinions, too much noise.</p>
                 <p class="body-text">What worked for me was simple: <strong>consistency over intensity.</strong></p>
                 <p class="body-text" style="margin-bottom: 0.3rem;">I stopped trying to learn everything and focused on one thing at a time:</p>
                 <ul class="mini-list">
@@ -151,15 +157,15 @@ custom_css: sidebar
                     <li>one implementation</li>
                     <li>one project</li>
                 </ul>
-                <p class="body-text">That approach changed everything. Within months I started building real systems, and over time moved into production-grade AI/ML work and teaching others.</p>
+                <p class="body-text">That approach changed everything. Within months I started building real systems, and over time moved into production-grade AI/ML work.</p>
 
                 <h2>How I Work</h2>
                 <p class="body-text" style="margin-bottom: 0.4rem;">I naturally think in systems, not just models.</p>
                 <ul class="lesson-list">
-                    <li><strong>From clinical research</strong>, I learned rigor: results must be reproducible, not guessed</li>
-                    <li><strong>From data analytics</strong>, I learned context: insights only matter if they solve real problems</li>
-                    <li><strong>From engineering</strong>, I learned reliability: if it doesn't scale or monitor, it's incomplete</li>
-                    <li><strong>From teaching</strong>, I learned clarity: if I can't explain it simply, I don't understand it well enough</li>
+                    <li><strong>From Clinical Research</strong>, I learned rigor: results must be reproducible, not guessed</li>
+                    <li><strong>From Data Analytics</strong>, I learned context: insights only matter if they solve real problems</li>
+                    <li><strong>From Engineering</strong>, I learned reliability: if it doesn't scale or monitor, it's incomplete</li>
+                    <li><strong>From Teaching</strong>, I learned clarity: if I can't explain it simply, I don't understand it well enough</li>
                 </ul>
                 <p class="body-text">This combination shapes everything I build today.</p>
 
