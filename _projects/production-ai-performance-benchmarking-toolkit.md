@@ -6,6 +6,16 @@ categories: projects
 permalink: /projects/production-ai-performance-benchmarking-toolkit/
 ---
 
+## Recruiter Snapshot
+
+| Signal | Details |
+|---|---|
+| Role fit | AI Engineer, LLMOps Engineer, MLOps Engineer, AI Platform Engineer |
+| Problem | AI systems can pass demos while failing on quality, latency, cost, safety, and regressions. |
+| Built | Benchmarking toolkit for RAG and agent systems covering quality scoring, retrieval tests, latency profiling, cost analysis, A/B tests, load testing, regression gates, and observability. |
+| Production evidence | FastAPI metrics server, Prometheus exporter, MLflow logging, RAGAS evaluation, Locust load tests, Evidently patterns, CI-ready checks, and dashboard APIs. |
+| Why it matters | Demonstrates the evaluation and monitoring discipline companies need before putting LLM systems in production. |
+
 ## Overview
 
 A production-grade Python framework for comprehensively benchmarking RAG systems and AI agents. This toolkit moves beyond "it works" to "it can be trusted" by measuring quality, latency, cost, safety, and observability at scale.

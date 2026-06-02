@@ -51,6 +51,11 @@ custom_css: sidebar
                 .intro-label { color: #f58506; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
                 .intro-title { color: #222; font-size: 24px; line-height: 1.25; font-weight: 700; margin: 0 0 8px; }
                 .intro-copy { color: #555; font-size: 16px; line-height: 1.75; margin: 0; }
+                .role-fit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 0 0 1.4rem; }
+                .role-fit-item { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 14px 16px; }
+                .role-fit-label { color: #888; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 5px; }
+                .role-fit-value { color: #333; font-size: 14px; line-height: 1.55; font-weight: 600; }
+                .role-fit-value span { display: inline-block; margin: 0 6px 6px 0; padding: 3px 8px; border: 1px solid #f58506; border-radius: 4px; color: #f58506; background: #fffaf3; font-size: 12px; }
 
 .featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 1rem 0 1.5rem; }
                 .featured-card { background: #fff; border: 1px solid #ececec; border-radius: 6px; padding: 16px; border-top: 3px solid #f58506; }
@@ -75,7 +80,7 @@ custom_css: sidebar
 
                 .build-list { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; }
                 .build-list li { font-size: 15px; color: #555; padding: 5px 0; padding-left: 18px; position: relative; line-height: 1.6; }
-                .build-list li::before { content: "▸"; color: #f58506; position: absolute; left: 0; }
+                .build-list li::before { content: ">"; color: #f58506; position: absolute; left: 0; }
 
                 .stats-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.9rem; margin: 1rem 0 1.5rem; }
                 .stat-card { background: #fff; border: 1px solid #ececec; border-top: 3px solid #f58506; border-radius: 6px; padding: 14px 10px; text-align: center; }
@@ -110,9 +115,27 @@ custom_css: sidebar
             </style>
             <div class="about-section" style="background: #FFFDF8; padding: 30px; border-radius: 8px; border-left: 4px solid #f58506;">
                 <div class="intro-panel">
-                    <div class="intro-label">Production AI and Data Systems</div>
-                    <div class="intro-title">I build GenAI, RAG, and governed data platforms that can be evaluated, deployed, and trusted.</div>
+                    <div class="intro-label">AI Engineer | GenAI, RAG, MLOps & Data Platforms</div>
+                    <div class="intro-title">I build production AI and data systems that can be evaluated, deployed, and trusted.</div>
                     <p class="intro-copy">My work combines AI engineering, data architecture, analytics, teaching, and writing. I care about systems that move beyond demos: clear retrieval design, measurable quality, secure data flows, observable behavior, and business outcomes people can act on.</p>
+                </div>
+                <div class="role-fit-grid" aria-label="Role fit summary">
+                    <div class="role-fit-item">
+                        <div class="role-fit-label">Target Roles</div>
+                        <div class="role-fit-value">AI Engineer, GenAI Engineer, Data Solutions Architect</div>
+                    </div>
+                    <div class="role-fit-item">
+                        <div class="role-fit-label">Core Stack</div>
+                        <div class="role-fit-value"><span>LangGraph</span><span>FastAPI</span><span>Qdrant</span><span>Azure</span><span>Databricks</span><span>Power BI</span></div>
+                    </div>
+                    <div class="role-fit-item">
+                        <div class="role-fit-label">Proof</div>
+                        <div class="role-fit-value">Production RAG demos, AI benchmarking, governed pipelines, technical writing</div>
+                    </div>
+                    <div class="role-fit-item">
+                        <div class="role-fit-label">Open To</div>
+                        <div class="role-fit-value">AI systems, RAG platforms, MLOps, analytics engineering</div>
+                    </div>
                 </div>
 
                 <h2 id="featured-work">Featured Work</h2>
@@ -143,7 +166,7 @@ custom_css: sidebar
 
                 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 1.3rem;">
                     <a href="/projects/" class="btn btn-primary"><i class="icon ion-md-folder"></i> View All Projects</a>
-                    <a href="{{ site.resume_url | relative_url }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"><i class="icon ion-ios-document"></i> Download Resume</a>
+                    <a href="mailto:{{ site.email }}?subject=Request%20for%20Tailored%20Resume&body=Hi%20Yachika,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20request%20a%20tailored%20resume%20for%20this%20role.%0D%0A%0D%0ARole%20/%20company:%20%0D%0AJob%20description%20link:%20%0D%0A%0D%0AThanks." class="btn btn-secondary"><i class="icon ion-ios-document"></i> Request Resume</a>
                     <a href="mailto:{{ site.email }}" class="btn btn-secondary"><i class="icon ion-md-mail"></i> Contact</a>
                 </div>
 
@@ -187,7 +210,7 @@ custom_css: sidebar
                         <div class="writing-card-header">
                             <span class="writing-platform-badge medium">Medium</span>
                         </div>
-                        <p>Deep dives on AI engineering, RAG design patterns, data pipelines, and applied ML — written for practitioners who want to move from experiments to production.</p>
+                        <p>Deep dives on AI engineering, RAG design patterns, data pipelines, and applied ML - written for practitioners who want to move from experiments to production.</p>
                         <div class="writing-topics">
                             <span>RAG Systems</span><span>LLM Engineering</span><span>Data Pipelines</span><span>MLOps</span>
                         </div>
@@ -225,7 +248,7 @@ custom_css: sidebar
 
                 <h2>Let's Connect</h2>
                 <div class="connect-box">
-                    I'm open to roles in <strong>AI engineering, GenAI/RAG systems, MLOps, and data platforms</strong>. If you're building something where correctness matters, systems need to scale, and AI must work in production — I'd love to connect.
+                    I'm open to roles in <strong>AI engineering, GenAI/RAG systems, MLOps, and data platforms</strong>. I tailor my resume for each opportunity, so please send the role or job description link and I will share the most relevant version.
                 </div>
 
                 <div style="display: flex; gap: 12px; flex-wrap: wrap;">

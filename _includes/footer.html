@@ -16,7 +16,7 @@
                         <ul class="list-reset">
                             {% if site.github %}<li><a href="{{ site.github }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-github"></i> Github</a></li>{% endif %}
                             {% if site.linkedin or site.linkedln %}<li><a href="{{ site.linkedin | default: site.linkedln }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-logo-linkedin"></i> LinkedIn</a></li>{% endif %}
-                            {% if site.resume_url %}<li><a href="{{ site.resume_url | relative_url }}" target="_blank" rel="noopener noreferrer"><i class="ion ion-ios-document"></i> Resume</a></li>{% endif %}
+                            {% if site.email %}<li><a href="mailto:{{ site.email }}?subject=Request%20for%20Tailored%20Resume&body=Hi%20Yachika,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20request%20a%20tailored%20resume%20for%20this%20role.%0D%0A%0D%0ARole%20/%20company:%20%0D%0AJob%20description%20link:%20%0D%0A%0D%0AThanks."><i class="ion ion-ios-document"></i> Request Resume</a></li>{% endif %}
                             {% if site.email %}<li><a href="mailto:{{ site.email }}"><i class="ion ion-md-mail"></i> Email</a></li>{% endif %}
                         </ul>
                     </div>

@@ -12,6 +12,16 @@ permalink: /projects/MedVault-RAG/
     allowfullscreen loading="lazy" title="MedVault-RAG Demo"></iframe>
 </div>
 
+## Recruiter Snapshot
+
+| Signal | Details |
+|---|---|
+| Role fit | AI Engineer, GenAI Engineer, RAG Engineer, Data Solutions Architect |
+| Problem | Healthcare teams need cited answers from large PDF libraries without manual search. |
+| Built | Agentic RAG platform with hybrid search, reranking, citations, PubMed ingestion, streaming UI, tenant isolation, caching, and observability. |
+| Production evidence | FastAPI backend, LangGraph agent, Qdrant, PostgreSQL, Redis, Docker Compose, Nginx, LangSmith traces, auth, tests, and deployment configuration. |
+| Why it matters | Shows system design, retrieval quality, secure data scoping, and end-to-end AI product delivery. |
+
 ## Overview
 
 MedVault is a full-stack, production-ready AI research platform built for healthcare teams. It solves a real problem in clinical and research workflows: medical knowledge is locked inside hundreds of static PDFs — guidelines, research papers, lab reports — and finding the right information at the right time is slow, error-prone, and entirely manual.

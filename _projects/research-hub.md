@@ -14,6 +14,16 @@ permalink: /projects/research-hub/
   </div>
 </div>
 
+## Recruiter Snapshot
+
+| Signal | Details |
+|---|---|
+| Role fit | AI Engineer, Research AI Engineer, Full-Stack GenAI Engineer |
+| Problem | Research teams lose time switching between PDFs, notes, citation managers, search tabs, and manual literature reviews. |
+| Built | Self-hosted AI research assistant with paper chat, hybrid retrieval, bulk ingestion, literature reviews, comparison, notes, BibTeX export, Arxiv monitoring, and team isolation. |
+| Production evidence | FastAPI, Streamlit, LangGraph, Qdrant, PostgreSQL, Redis, async workers, Docker, CI, tests, load tooling, and cost tracking. |
+| Why it matters | Shows product thinking, research workflow design, retrieval engineering, and deployment-ready implementation. |
+
 ## Overview
 
 ResearchHub is a production-grade, self-hosted AI research assistant for academics, engineers, and research teams. It helps users upload papers, chat with their document vault, run literature reviews, compare papers, monitor Arxiv, export BibTeX, and track notes and usage in one workspace.

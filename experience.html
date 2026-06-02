@@ -50,8 +50,10 @@ custom_css: sidebar
                         <h3>{{ job.title }}</h3>
                         <span class="duration">{{ job.duration }}</span>
                     </div>
-                    <p class="company">{{ job.company }}</p>
-                    <p>{{ job.description }}</p>
+                    <p class="company">{{ job.company }}{% if job.location %} - {{ job.location }}{% endif %}</p>
+                    {% if job.description %}
+                        <p>{{ job.description }}</p>
+                    {% endif %}
                     {% if job.highlights %}
                         <ul class="highlights">
                             {% for highlight in job.highlights %}

@@ -1,6 +1,10 @@
 - title: "MedVault-RAG"
   category: "AI"
   description: "Built a healthcare-focused AI research platform that turns static PDFs into a cited conversational knowledge base. The system combines hybrid search, cross-encoder reranking, a LangGraph agent, PubMed auto-ingestion, SSE streaming, tenant isolation, caching, and observability for clinical research workflows."
+  impact:
+    - "Agentic RAG with citations, faithfulness checks, and hybrid retrieval for healthcare research workflows."
+    - "Multi-tenant isolation across PostgreSQL and Qdrant, with streaming UX and observability."
+    - "Includes demo video, production Docker stack, and end-to-end system design."
   technologies: ["Python", "FastAPI", "LangGraph", "Qdrant", "Redis", "PostgreSQL", "Docling", "OpenAI", "Streamlit", "Docker", "Nginx", "LangSmith", "RAG"]
   date: "2026-05"
   link: "/projects/MedVault-RAG/"
@@ -9,6 +13,10 @@
 - title: "ResearchHub"
   category: "AI"
   description: "Built a self-hosted AI research assistant for academics and engineers with multi-paper chat, hybrid dense + BM25 retrieval, bulk PDF ingestion, structured paper extraction, literature reviews, paper comparison, knowledge graphs, BibTeX export, Arxiv monitoring, notes, cost tracking, and team-based multi-tenancy."
+  impact:
+    - "Full research workspace with paper chat, literature reviews, comparison, notes, BibTeX, and Arxiv monitoring."
+    - "Async ingestion, hybrid retrieval, team isolation, cost tracking, tests, CI, and Docker deployment."
+    - "Shows product thinking beyond a basic chatbot."
   technologies: ["FastAPI", "LangGraph", "LangChain", "Qdrant", "Redis", "PostgreSQL", "Streamlit", "Docker", "arq", "Docling", "OpenAI", "CI/CD"]
   date: "2026-05"
   link: "/projects/research-hub/"
@@ -17,6 +25,10 @@
 - title: "Production AI Performance Benchmarking Toolkit"
   category: "AI"
   description: "Created a practical benchmarking framework for production AI systems covering quality, speed, cost, baseline evaluation, latency profiling, RAGAS quality scoring, retrieval benchmarking, prompt A/B testing, cost analysis, load testing, regression testing, and observability."
+  impact:
+    - "Measures RAG quality, latency, cost, retrieval performance, safety, and regression risk."
+    - "Adds production API, Prometheus metrics, MLflow logging, Locust load tests, and CI-style gates."
+    - "Directly supports LLMOps and production AI evaluation roles."
   technologies: ["Python", "LangSmith", "RAGAS", "LangChain", "OpenAI", "Pandas", "FAISS", "BM25", "Prometheus", "Evidently AI", "Benchmarking"]
   date: "2026-05"
   link: "/projects/production-ai-performance-benchmarking-toolkit/"
@@ -25,6 +37,10 @@
 - title: "ClinETL Pipeline"
   category: "Data Engineering"
   description: "Designed a production-grade clinical trial monitoring pipeline for 500+ patients across 10 hospital sites. The system streams wearable and lab data through Kafka and Spark, validates clinical quality rules, writes to Delta Lake and PostgreSQL, detects anomalies and drift, predicts adverse events, and supports audit logging and real-time alerts."
+  impact:
+    - "Simulates real clinical monitoring scale: 500+ patients across 10 hospital sites."
+    - "Combines streaming data, validation, Delta Lake storage, anomaly detection, drift monitoring, and alerts."
+    - "Strong evidence for data engineering plus regulated-domain thinking."
   technologies: ["Kafka", "Spark Structured Streaming", "Delta Lake", "PostgreSQL", "Great Expectations", "XGBoost", "Evidently AI", "FastAPI", "Streamlit", "Docker", "Airflow", "HIPAA", "CDISC SDTM"]
   date: "2026-05"
   link: "/projects/clinetl-pipeline/"
@@ -33,6 +49,10 @@
 - title: "Databricks Retail Lakehouse"
   category: "Data Engineering"
   description: "Implemented a Databricks medallion architecture for a global retail analytics pipeline. The project organizes customer, product, and transaction data into Bronze, Silver, and Gold Delta tables with validation, incremental merges, business aggregates, Power BI-ready outputs, and documented governance patterns."
+  impact:
+    - "Bronze, Silver, and Gold Delta architecture with validation and incremental processing."
+    - "Produces Power BI-ready business aggregates and governed lakehouse outputs."
+    - "Matches common analytics engineering and data platform interview expectations."
   technologies: ["Databricks", "Apache Spark", "PySpark", "SQL", "Delta Lake", "Medallion Architecture", "Power BI", "Data Quality", "Lakehouse"]
   date: "2026-05"
   link: "/projects/databricks-retail-lakehouse/"
@@ -41,6 +61,9 @@
 - title: "Cybersecurity Product Experimentation & Retention Analytics"
   category: "ML"
   description: "Built an end-to-end product analytics workflow for a cybersecurity subscription product using synthetic telemetry. The project analyzes funnels, onboarding drop-offs, retention, subscription conversion, A/B test impact, causal feature adoption effects, churn risk, and stakeholder-ready business recommendations."
+  impact:
+    - "Connects experimentation, retention analytics, churn risk, and stakeholder recommendations."
+    - "Shows product judgment with A/B testing, causal inference, funnels, and business KPIs."
   technologies: ["Python", "SQL", "Pandas", "Scikit-learn", "Statsmodels", "Power BI", "A/B Testing", "Causal Inference", "Churn Modeling"]
   date: "2026-05"
   link: "/projects/cybersecurity-product-experimentation/"
@@ -49,6 +72,9 @@
 - title: "Online Purchase Orders Risk Classification"
   category: "ML"
   description: "Built a supervised ML workflow to predict default-payment risk for online purchase orders. The project uses domain-aware data cleaning, feature engineering from payment and order history fields, leakage-safe preprocessing with ColumnTransformer pipelines, model comparison, GridSearchCV tuning, and XGBoost selection based on ROC-AUC."
+  impact:
+    - "Demonstrates leakage-safe preprocessing, model comparison, tuning, and risk-model evaluation."
+    - "Useful proof for applied ML roles that require practical data cleaning and validation."
   technologies: ["Python", "Pandas", "Scikit-learn", "XGBoost", "GridSearchCV", "ColumnTransformer", "Joblib", "Parquet", "Risk Modeling"]
   date: "2026-05"
   link: "/projects/online-purchase-orders-classification/"
@@ -57,6 +83,9 @@
 - title: "Emotion Detection MLOps Pipeline"
   category: "ML"
   description: "Built a reproducible NLP classification pipeline for emotion detection using DVC and a modular data science structure. The workflow separates ingestion, preprocessing, feature engineering, model training, and evaluation so datasets, parameters, code, and model artifacts can be versioned and reproduced."
+  impact:
+    - "Shows reproducible ML structure with versioned datasets, parameters, and artifacts."
+    - "Good evidence for MLOps fundamentals: modular pipelines, DVC, and evaluation discipline."
   technologies: ["Python", "DVC", "Scikit-learn", "NLTK", "Pandas", "TF-IDF", "Gradient Boosting", "MLOps"]
   date: "2026-04"
   link: "/projects/emotion-detection-mlops/"

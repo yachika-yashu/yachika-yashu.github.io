@@ -267,6 +267,28 @@ i.ion,
     margin: 10px 0;
 }
 
+.project-impact {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 4px;
+}
+
+.project-impact li {
+    color: #444;
+    font-size: 14px;
+    line-height: 1.55;
+    padding: 4px 0 4px 18px;
+    position: relative;
+}
+
+.project-impact li:before {
+    content: ">";
+    color: #f58506;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
@@ -344,7 +366,7 @@ i.ion,
 }
 
 .highlights li:before {
-    content: "✓";
+    content: ">";
     position: absolute;
     left: 0;
     color: #f58506;

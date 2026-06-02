@@ -10,6 +10,13 @@
         <span class="project-category">{{ include.project.category }}</span>
     </div>
     <p class="project-description">{{ include.project.description }}</p>
+    {% if include.project.impact %}
+        <ul class="project-impact">
+            {% for item in include.project.impact %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
     {% if include.project.technologies %}
         <div class="project-tech">
             {% for tech in include.project.technologies %}
