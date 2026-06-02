@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Yachika Anand
-description: "AI Engineer and Data Solutions Architect building production GenAI, RAG systems, and governed data platforms. I write on Medium and Substack about AI engineering, data pipelines, and lessons from building real systems. 6+ years across AI, data engineering, teaching, and applied ML."
+description: "I'm Yachika, an AI Engineer and Data Solutions Architect with 8+ years across AI, data engineering, teaching, and applied ML. I build production GenAI and RAG systems and governed data platforms, along with the evaluation, deployment, and monitoring that let teams actually trust them. I also write on Medium and Substack about AI engineering, data pipelines, and the real lessons from taking systems from prototype to production."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
